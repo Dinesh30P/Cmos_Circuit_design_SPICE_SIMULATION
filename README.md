@@ -4,4 +4,4 @@
 
 - To verify circuit behavior before fabrication
 -  To optimize the Performance
--  Cost and time efficiency
+-  To reduce the Cost and improve time efficiency 
