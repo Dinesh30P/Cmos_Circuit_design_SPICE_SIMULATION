@@ -17,7 +17,7 @@
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ea9a8b75-a1f8-4b46-9179-3cd58b61fc3f" />
 
-## clocktree sysnthesis
+## Clocktree sysnthesis
 - delay table consists of  i/p slew and o/p load for buffer types (level 1, level 2)
 - intersection value consider as the delay
 - if the delay table not provide any value then we have to do interpolation between two values through equations
@@ -27,5 +27,6 @@
 
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
-# L2 Introduction to basic element in Circuit design – NMOS
-
+# L2: Introduction to basic element in Circuit design – NMOS
+|component         | description        |     Key Notes  
+-----------------------------------------------------------------------------------------------
