@@ -39,5 +39,12 @@ A transistor is a semiconductor device that can control the current flow through
 | Polysilicon / Metal Gate | Conductive layer placed over gate oxide| - Acts as the Gate terminal <br> - Controls channel via electric field <br> -Enables switching |
 | Body Terminal | Substrate connection point | - Often grounded in NMOS <br> - Impacts threshold voltage (body effect) <br> - Important for modeling |
 
-<img width="1770" height="716" alt="image" src="https://github.com/user-attachments/assets/ee5ea8b2-ae84-4e63-8b09-3ab224b7b79d" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/ee5ea8b2-ae84-4e63-8b09-3ab224b7b79d" />
+
+## Threshold Voltage:
+- Threhold Voltage (Vt) is the Gate Voltage
+- It is a function of x,y,z. which can accurately describes the NMOS Transistor. Here we called as Models.
+- <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
+
 
