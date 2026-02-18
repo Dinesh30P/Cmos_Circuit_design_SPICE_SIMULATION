@@ -29,7 +29,7 @@
 
 # L2: Introduction to basic element in Circuit design – NMOS
 
-A transistor is a semiconductor device that can control the current flow through an electric field and functions mainly as an amplifier or a switch. The MOS transistor is the core device msotly used in CMOS circuits. A MOS transistor can be either n-type (NMOS) or p-type (PMOS) depending on the doping and dominant charge carriers.
+A transistor is a semiconductor device that can control the current flow through an electric field and functions mainly as an amplifier or a switch. The MOS transistor is the core device mostly used in CMOS circuits. A MOS transistor can be either n-type (NMOS) or p-type (PMOS) depending on the doping and dominant charge carriers.
 
 |Component          | Description        |     Key Notes                    |
 |---------------------------|--------------------|--------------------------------------------------------|
