@@ -44,7 +44,7 @@ A transistor is a semiconductor device that can control the current flow through
 ## Threshold Voltage:
 - Threhold Voltage (Vt) is the gate voltage, grounded all termimals, starting from zero, and gradully increasing postively, until it reaches minimum volatage required to form a conductive channel between the source and drain.
 - It is a function of x,y,z. which can accurately describes the NMOS Transistor. Here we called as Models.
-- <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" /> <br>
-<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
+- <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" /> <br>
+<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
 
 
