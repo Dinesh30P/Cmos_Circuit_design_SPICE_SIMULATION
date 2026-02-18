@@ -1,15 +1,15 @@
 # CMOS_Circuit_design_&_SPICE_SIMULATION
  
 # L1: Why is SPICE Simulation needed?
-- To verify circuit behavior before fabrication
--  To optimize the Performance
--  To reduce the Cost and improve timing efficiency
+- To verify circuit behavior before fabrication.
+-  To optimize the Performance.
+-  To reduce the Cost and improve timing efficiency.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d0cd4084-6e16-4550-97e7-6f5c899e44ce" />
 
 
 ## What is circuit design and SPICE?
-- circuit design consists of logic gates AND,OR,NOT,Buffer...made up of PMOS and NMOS transistors connected in particular fasion
+- circuit design consists of logic gates AND,OR,NOT,Buffer...made up of PMOS and NMOS transistors connected in particular fasion.
 - SPICE is a Simulation Program with Integrated Circuit Emphasis, which genereats the waveform defines the delay of the pariticlar cell based on the waveform shape.
 
 ## Why do we need SPICE?
@@ -23,8 +23,9 @@
 - if the delay table not provide any value then we have to do interpolation between two values through equations
 - Each transistor (PMOS & NMOS) is unique, with different delay values and buffer sizing (W & L) delay behavior and determines current.
 - Buffer differentiation is part of circuit design.
-- Length(L) and  Width(W)  decide the Drive current (I) and the resulting timing curve
+- Length(L) and  Width(W)  decide the Drive current (I) that results in the timing curves.
 
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
-- 
+# L2 Introduction to basic element in Circuit design – NMOS
+
