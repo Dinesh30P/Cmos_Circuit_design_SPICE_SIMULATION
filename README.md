@@ -44,7 +44,7 @@ A transistor is a semiconductor device that can control the current flow through
 ## Threshold Voltage:
 - Threhold Voltage (Vt) is the gate voltage,when grounded all termimals, starting from zero, and gradully increasing postively, until it reaches minimum volatage required to form a conductive channel between the source and drain to turn on the NMOS.
 - It is a function of x,y,z. which can accurately describes the NMOS Transistor. Here we called as Models.
-- ## modeling of Threshold Volatage
+- ## Modeling of Threshold Volatage
 - Let, consider Vgs=0
 - Source, Connect Drain, and Body to GND
 - Now, Source-Body and Drain-Body acts as a pn junction diode
@@ -61,9 +61,11 @@ A transistor is a semiconductor device that can control the current flow through
 - We can also state the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
 - Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
 - In order to decides the thershold voltage equation. we have to consider the body terminal.
+
 <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4fe867eb-148a-47aa-90a4-052ea7cd70bd" />
 - by applying Vsb = 0 (left side)
 - by applying Vsb = +ve value (right side), depletion width will be more at source side be
+
 <img width="600" height="371" alt="image" src="https://github.com/user-attachments/assets/8ff3157a-0861-4dee-8388-0a73fa2e137f" />
 
 <img width="600" height="373" alt="image" src="https://github.com/user-attachments/assets/873e3efb-05cf-4135-b877-3da90caf3497" />
@@ -74,5 +76,11 @@ A transistor is a semiconductor device that can control the current flow through
 <img width="600" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
 
 #L4: Threshold voltage with positive substrate potential
+- On left side(Vbs = 0), there is the surface inversion takes places. 
+- Semiconductor surface inverts to n-type material at voltage Vgs = Vto
+
+<img width="890" height="431" alt="image" src="https://github.com/user-attachments/assets/e8d15ecc-87b5-4408-b3dd-fc8665361189" />
+
+
 
 
