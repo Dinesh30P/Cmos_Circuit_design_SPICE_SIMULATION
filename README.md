@@ -77,12 +77,12 @@ A transistor is a semiconductor device that can control the current flow through
 
 # L4: Threshold voltage with positive substrate potential
 
-- On left side(Vbs = 0), there is the surface inversion takes places. 
+- On the left side(Vbs = 0), there is the surface inversion takes places. 
 - Semiconductor surface inverts to n-type material at voltage Vgs = Vto
 
 <img width="890" height="431" alt="image" src="https://github.com/user-attachments/assets/e8d15ecc-87b5-4408-b3dd-fc8665361189" />
 
-- On right Side(Vbs = +ve value), there is the less surface inversion takes place becasue of few charges are pulled towards source.
+- On the right Side(Vbs = +ve value), there is the less surface inversion takes place becasue of few charges are pulled towards source.
 - An additional voltage (say V1) is required to overcome the increased depletion charge.
 - At some potential,  Semiconductor surface inverts to n-type material at voltage Vgs = Vto + V1 
 - from both of the cases, we have to concluded that in presence of substrate bias 'Vsb', additional potential is required for strong inversion.
