@@ -1,10 +1,15 @@
-# Cmos_Circuit_design_SPICE_SIMULATION
+# CMOS_Circuit_design_&_SPICE_SIMULATION
 
-# Lecture 1: Why is SPICE Simulation needed?
-
+# L1: Why is SPICE Simulation needed?
 - To verify circuit behavior before fabrication
 -  To optimize the Performance
 -  To reduce the Cost and improve timing efficiency 
+
+## Why we need SPICE  
+- Spice is a Simulation Program with Integrated Circuit Emphasis
+- 
+
+
 
 <img width="630" height="617" alt="image" src="https://github.com/user-attachments/assets/74c9bf47-5d18-4b06-982f-8641a19c5a8b" />
 
