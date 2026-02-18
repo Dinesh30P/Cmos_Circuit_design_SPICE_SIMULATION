@@ -42,9 +42,24 @@ A transistor is a semiconductor device that can control the current flow through
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ee5ea8b2-ae84-4e63-8b09-3ab224b7b79d" />
 
 ## Threshold Voltage:
-- Threhold Voltage (Vt) is the gate voltage, grounded all termimals, starting from zero, and gradully increasing postively, until it reaches minimum volatage required to form a conductive channel between the source and drain.
+- Threhold Voltage (Vt) is the gate voltage,when grounded all termimals, starting from zero, and gradully increasing postively, until it reaches minimum volatage required to form a conductive channel between the source and drain to turn on the NMOS.
 - It is a function of x,y,z. which can accurately describes the NMOS Transistor. Here we called as Models.
-- <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" /> <br>
+- ## modeling of Threshold Volatage
+- Let, consider Vgs=0
+- Source, Connect Drain, and Body to GND
+- Now, Source-Body and Drain-Body acts as a pn junction diode
+- As both junctions are OFF, there is a huge resistance between Source and Drain, thus no conductivity between Source and Drain.
+<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" /> <br>
+
+- When a small positive voltage is applied to the gate, an electric field is established across the gate oxide.
+- Then the gate oxide acts as a capacitor, causing repells the holes(postive charges) in the p-type substrate deeper into the substrate, leaving behind immobile negative ions near the surface.
+- As the negative charges are accumulate near to the gate oxided, a depletion region forms (depleting the majority charge carries) inside the NMOS near to the surface.
+   
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
+
+#L3: Strong inversion and threshold voltage
+- We can also state the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
+- Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
+
 
 
