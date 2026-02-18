@@ -28,16 +28,11 @@
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
 # L2: Introduction to basic element in Circuit design – NMOS
-|Component         | Description        |     Key Notes  |
-|------------------|--------------------|----------------|
-|P‑type Substrate | Base semiconductor foundation|  - Serves as the body
--Provides holes as majority carriers |
-|Isolation Region | Areas separating nearby devices | - Prevents electrical interaction
-- Reduces leakage and latch‑up risks |
-|Gate Oxide | Thin insulating layer above substrate | - Commonly SiO₂
-- Governs channel creation
-- Influences threshold voltage |
-| Polysilicon / Metal Gate | Conductive layer placed over gate oxide| - Acts as the Gate terminal - Controls channel via electric field -Enables switching |
+|Component          | Description        |     Key Notes                    |
+|---------------------------|--------------------|--------------------------------------------------------|
+|P‑type Substrate      | Base semiconductor foundation                   | -serves as the body  <br> Provides holes as majority carriers |
+|Isolation Region | Areas separating nearby devices | - Prevents electrical interaction <br> - Reduces leakage and latch‑up risks |
+|Gate Oxide | Thin insulating layer above substrate | - Commonly SiO₂ <br> - Governs channel creation <br> - Influences threshold voltage |
+| Polysilicon / Metal Gate | Conductive layer placed over gate oxide| - Acts as the Gate terminal <br> - Controls channel via electric field <br> -Enables switching |
 | Body Terminal | Substrate connection point | - Often grounded in NMOS
-- Impacts threshold voltage (body effect)
-- Important for modeling |
+<br> - Impacts threshold voltage (body effect) <br> - Important for modeling |
