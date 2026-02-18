@@ -70,6 +70,9 @@ A transistor is a semiconductor device that can control the current flow through
 
 - Applying a positive voltage to the substrate, an additional reverse bias is observed, as the source is now more negatively charged and the substrate is positively charged.
 - This increases the depletion layer width more near the source.
+
 <img width="600" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
+
+#L4: Threshold voltage with positive substrate potential
 
 
