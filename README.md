@@ -60,6 +60,11 @@ A transistor is a semiconductor device that can control the current flow through
 #L3: Strong inversion and threshold voltage
 - We can also state the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
 - Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
+- In order to decides the thershold voltage equation. we have to consider the body terminal.
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4fe867eb-148a-47aa-90a4-052ea7cd70bd" />
+- by applying Vsb = 0 (left side)
+- by applying Vsb = +ve value (right side), depletion width will be more at source side be
+- 
 
 
 
