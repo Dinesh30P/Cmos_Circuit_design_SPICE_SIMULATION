@@ -1,23 +1,28 @@
 # CMOS_Circuit_design_&_SPICE_SIMULATION
-
+ 
 # L1: Why is SPICE Simulation needed?
 - To verify circuit behavior before fabrication
 -  To optimize the Performance
--  To reduce the Cost and improve timing efficiency 
+-  To reduce the Cost and improve timing efficiency
 
-## Why we need SPICE  
-- Spice is a Simulation Program with Integrated Circuit Emphasis
-- 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d0cd4084-6e16-4550-97e7-6f5c899e44ce" />
 
 
+## What is circuit design and SPICE?
+- circuit design consists of logic gates AND,OR,NOT,Buffer...made up of PMOS and NMOS transistors connected in particular fasion
+- SPICE is a Simulation Program with Integrated Circuit Emphasis, which genereats the waveform defines the delay of the pariticlar cell based on the waveform shape.
 
-<img width="630" height="617" alt="image" src="https://github.com/user-attachments/assets/74c9bf47-5d18-4b06-982f-8641a19c5a8b" />
+## why do we need SPICE?
+- The clocktree synthesis, timing, crosstalks are build on the SPICE, without having SPICE there won't be delays and if there is no delays physical design flow, crosstalk won't make any sense.
 
-- The circuit shown above is a CMOS inverter, which represents the simplest form of a digital logic gate. 
-- most of the time,it can function to implement the NOT operation.
-- By altering the pull‑down (PDN) and pull‑up (PUN) networks, different logic gates can be constructed. 
-- When various input signals are applied to these circuits, their output behavior can be analyzed, and the corresponding I‑V characteristic curves are obtained as illustrated below.
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ea9a8b75-a1f8-4b46-9179-3cd58b61fc3f" />
 
-<img width="860" height="292" alt="image" src="https://github.com/user-attachments/assets/64990ce8-901d-43ae-bc0c-421cbfca20b9" />
+## clocktree sysnthesis
+- delay table consists of  i/p slew and o/p load for buffer types (level 1, level 2)
+- intersection value consider as the delay
+- if the delay table not provide any value then we have to do interpolation between two values through equations
+- W/L
+
+<img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
 - By s
