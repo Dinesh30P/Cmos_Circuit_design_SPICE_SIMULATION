@@ -57,7 +57,7 @@ A transistor is a semiconductor device that can control the current flow through
    
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
 
-#L3: Strong inversion and threshold voltage
+# L3: Strong inversion and threshold voltage
 - We can also state the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
 - Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
 - In order to decides the thershold voltage equation. we have to consider the body terminal.
@@ -75,11 +75,24 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="600" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
 
-#L4: Threshold voltage with positive substrate potential
+# L4: Threshold voltage with positive substrate potential
+
 - On left side(Vbs = 0), there is the surface inversion takes places. 
 - Semiconductor surface inverts to n-type material at voltage Vgs = Vto
 
 <img width="890" height="431" alt="image" src="https://github.com/user-attachments/assets/e8d15ecc-87b5-4408-b3dd-fc8665361189" />
+
+- On right Side(Vbs = +ve value), there is the less surface inversion takes place becasue of few charges are pulled towards source.
+- An additional voltage (say V1) is required to overcome the increased depletion charge.
+- At some potential,  Semiconductor surface inverts to n-type material at voltage Vgs = Vto + V1 
+- from both of the cases, we have to concluded that in presence of substrate bias 'Vsb', additional potential is required for strong inversion.
+
+<img width="440" height="176" alt="image" src="https://github.com/user-attachments/assets/8e548b49-710d-448e-9fc3-8268be332791" />
+
+<img width="361" height="256" alt="image" src="https://github.com/user-attachments/assets/d14a1439-d6e6-4569-b071-61841bdd42c7" />
+
+- These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.
+
 
 
 
