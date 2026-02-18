@@ -64,7 +64,10 @@ A transistor is a semiconductor device that can control the current flow through
 <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4fe867eb-148a-47aa-90a4-052ea7cd70bd" />
 - by applying Vsb = 0 (left side)
 - by applying Vsb = +ve value (right side), depletion width will be more at source side be
-- 
+<img width="867" height="371" alt="image" src="https://github.com/user-attachments/assets/8ff3157a-0861-4dee-8388-0a73fa2e137f" />
 
+<img width="836" height="373" alt="image" src="https://github.com/user-attachments/assets/873e3efb-05cf-4135-b877-3da90caf3497" />
+
+<img width="783" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
 
 
