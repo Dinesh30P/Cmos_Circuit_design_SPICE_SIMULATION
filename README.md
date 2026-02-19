@@ -93,6 +93,43 @@ A transistor is a semiconductor device that can control the current flow through
 
 - These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.
 
+# L1: Resistive region of operation with small drain-source voltage
+## Resistive Operation
+- Vgs is increases then channel width is increases, becauses of the induced charges casued by the gate voltage
+
+<img width="600" height="349" alt="image" src="https://github.com/user-attachments/assets/e0472695-f013-4799-a17d-214e7a7f9368" />
+
+- Lets, consider Vgs = 1V,
+- Vds = 0.05V
+- Vt = 0.45V
+- Qi ∝ (Vgs-Vt)
+- There is voltage gradient throughout the channel which starts at zero and at Vds 
+- Here, X-axis represents the channel length and Y-axis represents the channel width
+- V(x) is the Voltage at a point 'x' along channel 
+
+<img width="539" height="439" alt="image" src="https://github.com/user-attachments/assets/fd6929e7-76e6-41c5-9226-3439e1136fcf" />
+
+- Gate to channel Voltage at that point on the application of Vds is Vgs-V(x)
+
+# L2: Drift current theory
+- Now, in the channel, induced at any point
+- Qi(x) ∝ ([Vgs-V(x)]-Vt)
+- i.e Qi(x) = -Cox([Vgs-V(x)]-Vt)
+- here Cox is the Gate oxide capcitance  
+-  Cox = εox / tox
+-  εox is Oxide permittivity = 3.97x εo(Relative permittivity)
+-  3.5 x 10e-11 F/m
+-  tox = oxide thickness
+  
+-<img width="844" height="421" alt="image" src="https://github.com/user-attachments/assets/3a5d414e-b6f1-442d-a597-5a3c8086d5db" />
+
+- Drift current is been measured as velocity of the charge carriers multipiled by avaliable charges.
+
+<img width="496" height="457" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
+
+
+
+
 
 
 
