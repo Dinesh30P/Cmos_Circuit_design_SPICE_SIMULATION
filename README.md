@@ -123,9 +123,25 @@ A transistor is a semiconductor device that can control the current flow through
   
 -<img width="844" height="421" alt="image" src="https://github.com/user-attachments/assets/3a5d414e-b6f1-442d-a597-5a3c8086d5db" />
 
-- Drift current is been measured as velocity of the charge carriers multipiled by avaliable charges.
+- Drift current is been measured as velocity of the charge carriers multipiled by avaliable charges over the channel width (complete area).
 
-<img width="496" height="457" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
+
+# L3: Drain current model for linear region of operation
+
+- velocity is Vn(x), W is width, mobility of the carriers and electric field
+
+<img width="292" height="410" alt="image" src="https://github.com/user-attachments/assets/a85ac293-afbd-4ead-aa22-1382629a3d76" />
+
+- Substituing and Intergrating dx over channel lenght L will give the V-I relation of NMOS transistor.
+
+<img width="315" height="327" alt="image" src="https://github.com/user-attachments/assets/e0ff3e90-7c15-44f2-88f7-36576ca0c9b6" />
+
+- when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
+<img width="503" height="306" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
+
+
+
 
 
 
