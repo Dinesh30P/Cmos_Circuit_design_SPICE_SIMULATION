@@ -285,7 +285,10 @@ Vds^2 / 2 term in the current equation.
 
 # L4: First SPICE simulation
 
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/5c808992-7f65-4902-9f58-f484d7ea67d5" />
+
 - Id vs Vds Curve
+
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/a797f73a-b358-4fe5-9a6e-0a2187f2cb30" />
 
 - Y-axis having Id in µA and X-axis is Vds in Volts
@@ -295,6 +298,8 @@ Vds^2 / 2 term in the current equation.
 - for this transistor we are consider a thersold voltage around 0.55 Volts
 
 <img width="393" height="93" alt="image" src="https://github.com/user-attachments/assets/c7d23db3-e3e2-49cb-8137-42fee652baad" />
+
+- for selection the point on 1.4 vgs we will get repective Vds by doing projection on X-axis.
 
 
 
