@@ -257,10 +257,44 @@ Vds^2 / 2 term in the current equation.
 
 - Once we define the netlist, next we have to define the technology file.
 
-<img width="820" height="400" alt="image" src="https://github.com/user-attachments/assets/4bd4c5c2-375c-48c6-8573-4312ff961239" />
+<img width="420" height="200" alt="image" src="https://github.com/user-attachments/assets/4bd4c5c2-375c-48c6-8573-4312ff961239" />
 
 
-  # L3: Define technology parameters
+  # L3: Define Technology Parameters
+ 
+## Models
+ - AND gate is a BOOLEAN Multiplication of two inputs
+ - OR gate is a BOOLEAN Addition of two inputs
+
+## For Model Files(Vt,Id...) --> Model Parameters(γ, kn'/2...) are Required
+
+<img width="839" height="444" alt="image" src="https://github.com/user-attachments/assets/163ce3ae-2771-45a8-bcf2-1ffe17f7e2b2" />
+
+- for Nmos model file we have to choose NMOS package (its very important)
+
+<img width="471" height="393" alt="image" src="https://github.com/user-attachments/assets/8cacb959-fbbd-408b-8e41-cfbc1df79ad0" />
+
+### Package in a file (.mod )
+
+### .LIB "xxxx_025µm_model.mod" CMOS_MODELS
+
+### Simulation commands
+- We have to Sweep Drain and Gate Voltage
+
+<img width="690" height="470" alt="image" src="https://github.com/user-attachments/assets/4f64cabc-50ae-41a2-b857-92f23dda6bfc" />
+
+# L4: First SPICE simulation
+
+
+
+
+
+
+   
+
+
+
+
 
 
 
