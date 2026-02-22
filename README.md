@@ -251,6 +251,18 @@ Vds^2 / 2 term in the current equation.
  ### For the Second Componet (Resistor)
  - R1 --> ResistorXX (XX- number), in --> First terminal, n1 --> Node 1 {R1 is between in and n1}, 55 Ω --> Resistance  Value in Ohms
 
+### Vdd Source 
+- VXX --> Voltage source XX(it will between 2 nodes i.e Vdd and Zero), here  Vdd is 2.5 Volts.
+- Vin lies in between in(postive terminal)and Zero (negative terminal), here  Vin is 2.5 Volts.
+
+- Once we define the netlist, next we have to define the technology file.
+
+<img width="820" height="400" alt="image" src="https://github.com/user-attachments/assets/4bd4c5c2-375c-48c6-8573-4312ff961239" />
+
+
+  # L3: Define technology parameters
+
+
 
 
 
