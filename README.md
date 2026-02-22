@@ -138,11 +138,15 @@ A transistor is a semiconductor device that can control the current flow through
 <img width="315" height="327" alt="image" src="https://github.com/user-attachments/assets/e0ff3e90-7c15-44f2-88f7-36576ca0c9b6" />
 
 - when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
+  
 <img width="503" height="306" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
 # L4: SPICE conclusion to resistive operation
+
 - For linear region operation we have to make sure that  (Vds <= Vgs-Vt) so we neglection the 
 Vds^2 / 2 term in the current equation.
+
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/31b06dbb-93c9-46de-a840-4eb047d1a460" />
+
 - here we have sweep the values of Vds ranging for 0 to 2.05 but maintaining the condition         Vds <= Vgs-Vt to be in the linear region or restitve region of operation.
 - if Vds >= Vgs-Vt then device enters into the saturation region
 
@@ -151,6 +155,10 @@ Vds^2 / 2 term in the current equation.
 - if Vds >= Vgs-Vt then device enters into the saturation region
 - Vgs- V(x) is the gate to channel volatage at that point
 - channel voltage = =Vgs-Vds
+
+<img width="522" height="415" alt="image" src="https://github.com/user-attachments/assets/ae00abbf-81fc-4570-bcae-0eea0a64d1de" />
+
+
 
 | Vgs | Vds  | Vgs - Vds |   | Vt   |
 |-----|------|-----------|---|------|
@@ -164,6 +172,58 @@ Vds^2 / 2 term in the current equation.
 | 1   | 0.75 | 0.25      | < | 0.45 |
 | 1   | 0.85 | 0.15      | < | 0.45 |
 | 1   | 0.95 | 0.05      | < | 0.45 |
+
+- At Vgs > Vt (surface inversion already happens)
+## Pinch of Phenomenon Started
+- i.e channel begins to disappear(linearity of the current flow changes)
+- At this point Vt = Vgs-Vds(surface iversion just happens / about to happen )
+
+<img width="504" height="432" alt="image" src="https://github.com/user-attachments/assets/d197b2b5-2be4-44da-958c-e235c6dcfd13" />
+
+ ## Pinch off Region
+
+-  here Vgs-Vds < Vt(no channel present near to the drain)
+ 
+-  <img width="500" height="444" alt="image" src="https://github.com/user-attachments/assets/685c7cf4-2b31-4383-87a7-d2d95e2d91cd" />
+
+# L6: Drain current model for saturation region of operation
+
+- Voltage over the channel remains constant  = Vgs-Vt (Vds is negligible/ vanished)
+- In the current Equation Vds in the channel voltage{Vgs- Vds} is Replace by (Vgs-Vt)
+- Then the equation turns into (no more linear function of f(Vds))
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/362d136e-9a9a-48c9-97f3-19ebfe1ae079" />
+
+- Even it look like perfect current source i.e current is constant, but it is not 'correct'
+- Due to effective conductive channel length is modualated by applied Vds
+- Even it going to reduces if Vds further increase
+- For getting more accurate equation, and (λ * Vds) is added
+- Here, λ = Channel length modulation
+
+<img width="500" height="304" alt="image" src="https://github.com/user-attachments/assets/e0a9cd88-07fe-4b8b-8e6d-82ee22999f5a" />
+
+## Constant Current Equation for Saturation Region 
+
+- Id = (kn'/2)(W/L)(1+ λ*Vds)(Vgs-Vt)**2
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
 
 
 
