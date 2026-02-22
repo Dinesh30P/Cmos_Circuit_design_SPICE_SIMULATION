@@ -139,7 +139,31 @@ A transistor is a semiconductor device that can control the current flow through
 
 - when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
 <img width="503" height="306" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
+# L4: SPICE conclusion to resistive operation
+- For linear region operation we have to make sure that  (Vds <= Vgs-Vt) so we neglection the 
+Vds^2 / 2 term in the current equation.
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/31b06dbb-93c9-46de-a840-4eb047d1a460" />
+- here we have sweep the values of Vds ranging for 0 to 2.05 but maintaining the condition         Vds <= Vgs-Vt to be in the linear region or restitve region of operation.
+- if Vds >= Vgs-Vt then device enters into the saturation region
 
+# L5 Pinch-off region condition
+
+- if Vds >= Vgs-Vt then device enters into the saturation region
+- Vgs- V(x) is the gate to channel volatage at that point
+- channel voltage = =Vgs-Vds
+
+| Vgs | Vds  | Vgs - Vds |   | Vt   |
+|-----|------|-----------|---|------|
+| 1   | 0.05 | 0.95      | > | 0.45 |
+| 1   | 0.15 | 0.85      | > | 0.45 |
+| 1   | 0.25 | 0.75      | > | 0.45 |
+| 1   | 0.35 | 0.65      | > | 0.45 |
+| 1   | 0.45 | 0.55      | > | 0.45 |
+| 1   | 0.55 | 0.45      | = | 0.45 |
+| 1   | 0.65 | 0.35      | < | 0.45 |
+| 1   | 0.75 | 0.25      | < | 0.45 |
+| 1   | 0.85 | 0.15      | < | 0.45 |
+| 1   | 0.95 | 0.05      | < | 0.45 |
 
 
 
