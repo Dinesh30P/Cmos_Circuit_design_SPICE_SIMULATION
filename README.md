@@ -138,6 +138,10 @@ A transistor is a semiconductor device that can control the current flow through
 <img width="315" height="327" alt="image" src="https://github.com/user-attachments/assets/e0ff3e90-7c15-44f2-88f7-36576ca0c9b6" />
 
 - when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
+
+## Current Equation for Linear Region 
+
+Id = (Kn)*{(Vgs-Vt)Vds - Vds**2 / 2} 
   
 <img width="503" height="306" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
 # L4: SPICE conclusion to resistive operation
@@ -204,7 +208,53 @@ Vds^2 / 2 term in the current equation.
 
 ## Constant Current Equation for Saturation Region 
 
-- Id = (kn'/2)(W/L)(1+ λ*Vds)(Vgs-Vt)**2
+- Id = (Kn'/2)(W/L)(1+ λ*Vds)(Vgs-Vt)**2
+
+# L1 Basic SPICE setup
+
+- It is basically a software and its an engine which can derives some waveform by giving inputs
+- This waveforms are used to calculate the delay of the cell
+- This delays are accurate and used to Static Timing Analysis(STA)
+
+##  SPICE Model Parameters 
+- The highlighted ones are the constants will come from the foundaries when we tackle advance technology nodes
+
+<img width="612" height="421" alt="image" src="https://github.com/user-attachments/assets/eb44d327-72f0-4f90-8070-435ce1113d0e" />
+
+## SPICE setup Flow chart
+
+<img width="426" height="491" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
+
+## Spice Netlist 
+- A SPICE netlist is a plain text file that defines the components and connections of an electronic circuit, allowing it to be analyzed and simulated using SPICE software.
+
+<img width="783" height="396" alt="image" src="https://github.com/user-attachments/assets/088e3d30-d3eb-455e-9a0b-fa1683dce2c4" />
+
+# L2: Circuit description in SPICE syntax
+
+- let's give the values for the netlist
+- Here, We can considering 4 nodes (where there is no obstraction we can consider as node)
+
+<img width="437" height="372" alt="image" src="https://github.com/user-attachments/assets/3998d2e2-e461-4278-9b9f-3169d6be1a5a" />
+
+- In an electrical circuit, a node is a point where two or more components are connected together. It represents a location where the electrical potential (voltage) is the same for all connected elements.
+- Nodes are used in circuit analysis to determine voltages and currents throughout the system.
+
+  ## DGSS
+  
+<img width="806" height="309" alt="image" src="https://github.com/user-attachments/assets/7da08862-1bc6-4461-a3c7-9d434fcc8125" />
+
+- MOSFET have 4 terminals i.e Drain, Gate, Source, Substrate/Bulk
+### For the First Component (MOSFET)
+- M1 --> MOSFETXX (XX- number), Vdd --> Drain, 0 --> Source node, 0 --> Substrate node, NMOS --> it comes from technology file, W= 1.8µ --> Width of the Gate in microns, L = 1.2µ --> length of the Gate in Micron.
+
+ ### For the Second Componet (Resistor)
+ - R1 --> ResistorXX (XX- number), in --> First terminal, n1 --> Node 1 {R1 is between in and n1}, 55 Ω --> Resistance  Value in Ohms
+
+
+
+
+
 
 
   
