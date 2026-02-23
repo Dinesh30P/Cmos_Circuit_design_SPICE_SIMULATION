@@ -339,6 +339,14 @@ Vds^2 / 2 term in the current equation.
 
 #### L2 Drain current vs gate voltage for long and short channel device
 
+- long channel device (> 1.20)
+- short channel device (< 0.25)
+
+<img width="886" height="492" alt="image" src="https://github.com/user-attachments/assets/18685893-1358-4d0d-b0e9-bb5adc057a1e" />
+
+
+
+
 
 
 
