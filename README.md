@@ -308,8 +308,21 @@ Vds^2 / 2 term in the current equation.
 
 <img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2289e92f-c19d-4773-a604-bc5f7248f004" />
 
-- Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
-- Here, by keeping W/L ratio constant 
+## Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
+
+- Here, by keeping W/L ratio constant
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e12a9f2a-0001-427c-9408-8836962b96ff" />
+
+- commands and changing the value of the W and L by using "gedit" in the day2 file in the cloud
+- run the edited file by keeping W= 0.375µ, L= 0.25µ device (W/L = 1.5)
+ 
+<img width="1113" height="727" alt="image" src="https://github.com/user-attachments/assets/33486745-b082-4ca5-9264-ba61978fe095" />
+
+- here , the ploting of W= 0.375µ, L= 0.25µ device (W/L = 1.5) in the ngspice
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/022953ba-1dfe-4c45-9f68-77b37695d86e" />
+
 
 
 
