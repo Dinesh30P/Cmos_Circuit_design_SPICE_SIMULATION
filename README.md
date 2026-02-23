@@ -293,13 +293,22 @@ Vds^2 / 2 term in the current equation.
 
 - Y-axis having Id in µA and X-axis is Vds in Volts
 - we can get to observe different regions in the graph(cut off region on right bottom)which was ploted and we can see Vgs of different plot on right side(which was decreasing from top to bottom)
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/dc7248fb-5f46-4985-8fa1-fafc53617cf0" />
+
+
 - We are sweeping with step of 0.2
 - We are not observing any curve for Vgs = 0.2,0.4 i.e device should need to cross atleast thershold voltage.
-- for this transistor we are consider a thersold voltage around 0.55 Volts
-
-<img width="393" height="93" alt="image" src="https://github.com/user-attachments/assets/c7d23db3-e3e2-49cb-8137-42fee652baad" />
-
+- for this transistor we are consider a thersold voltage around 0.55 Volts.
 - for selection the point on 1.4 vgs we will get repective Vds by doing projection on X-axis.
+
+# L1: SPICE simulation for lower nodes
+
+- Here we consider beyond the blue line it is linear, after the blue line it is non linear[it is a function of (1+ λ*Vds)}
+
+<img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2289e92f-c19d-4773-a604-bc5f7248f004" />
+
+
 
 
 
