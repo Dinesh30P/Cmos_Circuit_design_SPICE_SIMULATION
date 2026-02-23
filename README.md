@@ -308,6 +308,9 @@ Vds^2 / 2 term in the current equation.
 
 <img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2289e92f-c19d-4773-a604-bc5f7248f004" />
 
+- Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
+- Here, by keeping W/L ratio constant 
+
 
 
 
