@@ -351,7 +351,10 @@ Vds^2 / 2 term in the current equation.
 
 - At saturation region, the drain current (Id) is a switching from Quadratic to Linear dependence by increasing the Vgs.
 - Reason for this is Velocity Saturation in the short channels
-- 
+
+<img width="1027" height="681" alt="image" src="https://github.com/user-attachments/assets/ab3233b1-350c-4016-a480-026fc55b0b11" />
+
+<img width="1669" height="743" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
 
 
 
