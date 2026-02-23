@@ -342,7 +342,7 @@ Vds^2 / 2 term in the current equation.
 - long channel device (> 1.20)
 - short channel device (< 0.25)
 
-<img width="886" height="492" alt="image" src="https://github.com/user-attachments/assets/18685893-1358-4d0d-b0e9-bb5adc057a1e" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/18685893-1358-4d0d-b0e9-bb5adc057a1e" />
 
 ##### In long channel
 - At saturation region, the drain current (Id) is a quadratic dependence from Vgs raised from bottom to top
@@ -353,13 +353,13 @@ Vds^2 / 2 term in the current equation.
 - At saturation region, the drain current (Id) is a switching from Quadratic to Linear dependence by increasing the Vgs.
 - Reason for this is Velocity Saturation in the short channels
 
-<img width="1027" height="681" alt="image" src="https://github.com/user-attachments/assets/ab3233b1-350c-4016-a480-026fc55b0b11" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ab3233b1-350c-4016-a480-026fc55b0b11" />
 
-<img width="1669" height="743" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
 
 
 
-<img width="1715" height="830" alt="image" src="https://github.com/user-attachments/assets/e4be051b-9f05-45d1-861f-b22f36239742" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e4be051b-9f05-45d1-861f-b22f36239742" />
 
 
 
