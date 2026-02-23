@@ -1,4 +1,4 @@
-# NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
+<img width="894" height="518" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" /># NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
 
 ## Introduction to Circuit Design and SPICE simulations
 
@@ -364,6 +364,12 @@ Vds^2 / 2 term in the current equation.
 Barely look like linear
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4c6b54a7-7dc2-467d-9a4a-bf4d87937c27" />
+
+#### L3 Velocity saturation at lower and higher electric fields
+
+<img width="894" height="518" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" />
+
+
 
 
 
