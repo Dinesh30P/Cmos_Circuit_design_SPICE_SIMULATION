@@ -343,10 +343,11 @@ Vds^2 / 2 term in the current equation.
 - short channel device (< 0.25)
 
 <img width="886" height="492" alt="image" src="https://github.com/user-attachments/assets/18685893-1358-4d0d-b0e9-bb5adc057a1e" />
+
 ##### In long channel
 - At saturation region, the drain current (Id) is a quadratic dependence from Vgs raised from bottom to top
 - Here, at different values of Vgs at one Vds(2.5Volts) is a quadratic dependence.
-- 
+
 #####  In short channel
 
 - At saturation region, the drain current (Id) is a switching from Quadratic to Linear dependence by increasing the Vgs.
