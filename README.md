@@ -346,16 +346,27 @@ Vds^2 / 2 term in the current equation.
 
 ##### In long channel
 - At saturation region, the drain current (Id) is a quadratic dependence from Vgs raised from bottom to top
-- Here, at different values of Vgs at one Vds(2.5Volts) is a quadratic dependence.
+- Here, at different values of Vgs at one Vds(2.5Volts) is a quadratic dependence
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ab3233b1-350c-4016-a480-026fc55b0b11" />
+
+- Barely look like qudratic  
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
+
 
 #####  In short channel
 
 - At saturation region, the drain current (Id) is a switching from Quadratic to Linear dependence by increasing the Vgs.
 - Reason for this is Velocity Saturation in the short channels
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ab3233b1-350c-4016-a480-026fc55b0b11" />
+<img width="1026" height="628" alt="image" src="https://github.com/user-attachments/assets/b3ff6b1c-b3b4-40d6-af04-e655316fe734" />
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
+Barely look like linear
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4c6b54a7-7dc2-467d-9a4a-bf4d87937c27" />
+
+
+
 
 
 
