@@ -1,6 +1,10 @@
-# CMOS_Circuit_design_&_SPICE_SIMULATION
+# NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
+
+## Introduction to Circuit Design and SPICE simulations
+
+### CMOS_Circuit_design_&_SPICE_SIMULATION
  
-# L1: Why is SPICE Simulation needed?
+#### L1: Why is SPICE Simulation needed?
 - To verify circuit behavior before fabrication.
 -  To optimize the Performance.
 -  To reduce the Cost and improve timing efficiency.
@@ -8,16 +12,16 @@
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d0cd4084-6e16-4550-97e7-6f5c899e44ce" />
 
 
-## What is circuit design and SPICE?
+###### What is circuit design and SPICE?
 - circuit design consists of logic gates AND,OR,NOT,Buffer...made up of PMOS and NMOS transistors connected in particular fasion.
 - SPICE is a Simulation Program with Integrated Circuit Emphasis, which genereats the waveform defines the delay of the pariticlar cell based on the waveform shape.
 
-## Why do we need SPICE?
+###### Why do we need SPICE?
 - The clocktree synthesis, timing, crosstalks are build on the SPICE, without having SPICE there won't be delays and if there is no delays physical design flow, crosstalk won't make any sense.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ea9a8b75-a1f8-4b46-9179-3cd58b61fc3f" />
 
-## Clocktree sysnthesis
+###### Clocktree sysnthesis
 - delay table consists of  i/p slew and o/p load for buffer types (level 1, level 2)
 - intersection value consider as the delay
 - if the delay table not provide any value then we have to do interpolation between two values through equations
@@ -27,7 +31,7 @@
 
 <img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
-# L2: Introduction to basic element in Circuit design – NMOS
+#### L2: Introduction to basic element in Circuit design – NMOS
 
 A transistor is a semiconductor device that can control the current flow through an electric field and functions mainly as an amplifier or a switch. The MOS transistor is the core device mostly used in CMOS circuits. A MOS transistor can be either n-type (NMOS) or p-type (PMOS) depending on the doping and dominant charge carriers.
 
@@ -41,10 +45,11 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ee5ea8b2-ae84-4e63-8b09-3ab224b7b79d" />
 
-## Threshold Voltage:
+##### Threshold Voltage:
 - Threhold Voltage (Vt) is the gate voltage,when grounded all termimals, starting from zero, and gradully increasing postively, until it reaches minimum volatage required to form a conductive channel between the source and drain to turn on the NMOS.
 - It is a function of x,y,z. which can accurately describes the NMOS Transistor. Here we called as Models.
-- ## Modeling of Threshold Volatage
+##### Modeling of Threshold Volatage
+
 - Let, consider Vgs=0
 - Source, Connect Drain, and Body to GND
 - Now, Source-Body and Drain-Body acts as a pn junction diode
@@ -57,7 +62,7 @@ A transistor is a semiconductor device that can control the current flow through
    
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
 
-# L3: Strong inversion and threshold voltage
+#### L3: Strong inversion and threshold voltage
 - We can also state that the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
 - Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
 - In order to decides the thershold voltage equation. we have to consider the body terminal.
@@ -75,7 +80,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="600" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
 
-# L4: Threshold voltage with positive substrate potential
+#### L4: Threshold voltage with positive substrate potential
 
 - On the left side(Vbs = 0), there is the surface inversion takes places. 
 - Semiconductor surface inverts to n-type material at voltage Vgs = Vto
@@ -93,8 +98,11 @@ A transistor is a semiconductor device that can control the current flow through
 
 - These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.
 
-# L1: Resistive region of operation with small drain-source voltage
-## Resistive Operation
+### NMOS resistive region and saturation region of operation
+
+#### L1: Resistive region of operation with small drain-source voltage
+
+##### Resistive Operation
 - Vgs is increases then channel width is increases, becauses of the induced charges casued by the gate voltage
 
 <img width="600" height="349" alt="image" src="https://github.com/user-attachments/assets/e0472695-f013-4799-a17d-214e7a7f9368" />
@@ -111,7 +119,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 - Gate to channel Voltage at that point on the application of Vds is Vgs-V(x)
 
-# L2: Drift current theory
+#### L2: Drift current theory
 - Now, in the channel, induced at any point
 - Qi(x) ∝ ([Vgs-V(x)]-Vt)
 - i.e Qi(x) = -Cox([Vgs-V(x)]-Vt)
@@ -127,7 +135,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
 
-# L3: Drain current model for linear region of operation
+#### L3: Drain current model for linear region of operation
 
 - velocity is Vn(x), W is width, mobility of the carriers and electric field
 
@@ -139,12 +147,12 @@ A transistor is a semiconductor device that can control the current flow through
 
 - when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
 
-## Current Equation for Linear Region 
+##### Current Equation for Linear Region 
 
 Id = (Kn)*{(Vgs-Vt)Vds - Vds**2 / 2} 
   
 <img width="503" height="306" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
-# L4: SPICE conclusion to resistive operation
+#### L4: SPICE conclusion to resistive operation
 
 - For linear region operation we have to make sure that  (Vds <= Vgs-Vt) so we neglection the 
 Vds^2 / 2 term in the current equation.
@@ -154,7 +162,7 @@ Vds^2 / 2 term in the current equation.
 - here we have sweep the values of Vds ranging for 0 to 2.05 but maintaining the condition         Vds <= Vgs-Vt to be in the linear region or restitve region of operation.
 - if Vds >= Vgs-Vt then device enters into the saturation region
 
-# L5 Pinch-off region condition
+#### L5 Pinch-off region condition
 
 - if Vds >= Vgs-Vt then device enters into the saturation region
 - Vgs- V(x) is the gate to channel volatage at that point
@@ -190,7 +198,7 @@ Vds^2 / 2 term in the current equation.
  
 -  <img width="500" height="444" alt="image" src="https://github.com/user-attachments/assets/685c7cf4-2b31-4383-87a7-d2d95e2d91cd" />
 
-# L6: Drain current model for saturation region of operation
+#### L6: Drain current model for saturation region of operation
 
 - Voltage over the channel remains constant  = Vgs-Vt (Vds is negligible/ vanished)
 - In the current Equation Vds in the channel voltage{Vgs- Vds} is Replace by (Vgs-Vt)
@@ -206,31 +214,33 @@ Vds^2 / 2 term in the current equation.
 
 <img width="500" height="304" alt="image" src="https://github.com/user-attachments/assets/e0a9cd88-07fe-4b8b-8e6d-82ee22999f5a" />
 
-## Constant Current Equation for Saturation Region 
+##### Constant Current Equation for Saturation Region 
 
 - Id = (Kn'/2)(W/L)(1+ λ*Vds)(Vgs-Vt)**2
 
-# L1 Basic SPICE setup
+### Introduction to SPICE
+
+#### L1 Basic SPICE setup
 
 - It is basically a software and its an engine which can derives some waveform by giving inputs
 - This waveforms are used to calculate the delay of the cell
 - This delays are accurate and used to Static Timing Analysis(STA)
 
-##  SPICE Model Parameters 
+##### SPICE Model Parameters 
 - The highlighted ones are the constants will come from the foundaries when we tackle advance technology nodes
 
 <img width="612" height="421" alt="image" src="https://github.com/user-attachments/assets/eb44d327-72f0-4f90-8070-435ce1113d0e" />
 
-## SPICE setup Flow chart
+##### SPICE setup Flow chart
 
 <img width="426" height="491" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
 
-## Spice Netlist 
+##### Spice Netlist 
 - A SPICE netlist is a plain text file that defines the components and connections of an electronic circuit, allowing it to be analyzed and simulated using SPICE software.
 
 <img width="783" height="396" alt="image" src="https://github.com/user-attachments/assets/088e3d30-d3eb-455e-9a0b-fa1683dce2c4" />
 
-# L2: Circuit description in SPICE syntax
+#### L2: Circuit description in SPICE syntax
 
 - let's give the values for the netlist
 - Here, We can considering 4 nodes (where there is no obstraction we can consider as node)
@@ -240,18 +250,18 @@ Vds^2 / 2 term in the current equation.
 - In an electrical circuit, a node is a point where two or more components are connected together. It represents a location where the electrical potential (voltage) is the same for all connected elements.
 - Nodes are used in circuit analysis to determine voltages and currents throughout the system.
 
-  ## DGSS
+##### DGSS
   
 <img width="806" height="309" alt="image" src="https://github.com/user-attachments/assets/7da08862-1bc6-4461-a3c7-9d434fcc8125" />
 
 - MOSFET have 4 terminals i.e Drain, Gate, Source, Substrate/Bulk
-### For the First Component (MOSFET)
+##### For the First Component (MOSFET)
 - M1 --> MOSFETXX (XX- number), Vdd --> Drain, 0 --> Source node, 0 --> Substrate node, NMOS --> it comes from technology file, W= 1.8µ --> Width of the Gate in microns, L = 1.2µ --> length of the Gate in Micron.
 
- ### For the Second Componet (Resistor)
- - R1 --> ResistorXX (XX- number), in --> First terminal, n1 --> Node 1 {R1 is between in and n1}, 55 Ω --> Resistance  Value in Ohms
+##### For the Second Componet (Resistor)
+- R1 --> ResistorXX (XX- number), in --> First terminal, n1 --> Node 1 {R1 is between in and n1}, 55 Ω --> Resistance  Value in Ohms
 
-### Vdd Source 
+##### Vdd Source 
 - VXX --> Voltage source XX(it will between 2 nodes i.e Vdd and Zero), here  Vdd is 2.5 Volts.
 - Vin lies in between in(postive terminal)and Zero (negative terminal), here  Vin is 2.5 Volts.
 
@@ -260,13 +270,13 @@ Vds^2 / 2 term in the current equation.
 <img width="420" height="200" alt="image" src="https://github.com/user-attachments/assets/4bd4c5c2-375c-48c6-8573-4312ff961239" />
 
 
-  # L3: Define Technology Parameters
+#### L3: Define Technology Parameters
  
-## Models
+##### Models
  - AND gate is a BOOLEAN Multiplication of two inputs
  - OR gate is a BOOLEAN Addition of two inputs
 
-## For Model Files(Vt,Id...) --> Model Parameters(γ, kn'/2...) are Required
+##### For Model Files(Vt,Id...) --> Model Parameters(γ, kn'/2...) are Required
 
 <img width="839" height="444" alt="image" src="https://github.com/user-attachments/assets/163ce3ae-2771-45a8-bcf2-1ffe17f7e2b2" />
 
@@ -274,16 +284,16 @@ Vds^2 / 2 term in the current equation.
 
 <img width="471" height="393" alt="image" src="https://github.com/user-attachments/assets/8cacb959-fbbd-408b-8e41-cfbc1df79ad0" />
 
-### Package in a file (.mod )
+##### Package in a file (.mod )
 
-### .LIB "xxxx_025µm_model.mod" CMOS_MODELS
+##### .LIB "xxxx_025µm_model.mod" CMOS_MODELS
 
-### Simulation commands
+##### Simulation commands
 - We have to Sweep Drain and Gate Voltage
 
 <img width="690" height="470" alt="image" src="https://github.com/user-attachments/assets/4f64cabc-50ae-41a2-b857-92f23dda6bfc" />
 
-# L4: First SPICE simulation
+#### L4: First SPICE simulation
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/5c808992-7f65-4902-9f58-f484d7ea67d5" />
 
@@ -302,13 +312,17 @@ Vds^2 / 2 term in the current equation.
 - for this transistor we are consider a thersold voltage around 0.55 Volts.
 - for selection the point on 1.4 vgs we will get repective Vds by doing projection on X-axis.
 
-# L1: SPICE simulation for lower nodes
+## NgspiceSky130 - Day 2 - Velocity saturation and basics of CMOS inverter VTC
+
+### SPICE simulation for lower nodes and velocity saturation effect
+
+#### L1: SPICE simulation for lower nodes
 
 - Here we consider beyond the blue line it is linear, after the blue line it is non linear[it is a function of (1+ λ*Vds)}
 
 <img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2289e92f-c19d-4773-a604-bc5f7248f004" />
 
-## Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
+##### Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
 
 - Here, by keeping W/L ratio constant
 
@@ -322,6 +336,9 @@ Vds^2 / 2 term in the current equation.
 - here , the ploting of W= 0.375µ, L= 0.25µ device (W/L = 1.5) in the ngspice
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/022953ba-1dfe-4c45-9f68-77b37695d86e" />
+
+#### L2 Drain current vs gate voltage for long and short channel device
+
 
 
 
