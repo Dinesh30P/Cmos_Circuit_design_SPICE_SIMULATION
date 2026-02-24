@@ -426,19 +426,67 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/0e5dc61f-06a9-48e3-ab18-33033076c750" />
 
-#### L5 Labs Sky130 Id-Vgs
+#### L5: Labs Sky130 Id-Vgs
 
 - for running W = 0.39 and L = 0.15 (short channel)
 
 <img width="531" height="400" alt="image" src="https://github.com/user-attachments/assets/1a09ffdb-57bf-4936-b14c-a109e2b629ca" />
 
-- here, is  the plot for  IdVds
+##### here, is  the plot for  **IdVds**
 
 <img width="506" height="400" alt="image" src="https://github.com/user-attachments/assets/991a7a4f-9074-4c52-ac43-c85f3e704b6a" />
 
 - From this plot , we can observe that for lower value of Vgs we get Quadratic and higher values of the Vgs we getting linear
 
 <img width="409" height="304" alt="image" src="https://github.com/user-attachments/assets/d7e2d15b-9126-492c-924e-6ed56b8844df" />
+
+##### here, is  the plot for  **IdVgs**
+
+- for running W = 0.39 and L = 0.15 (short channel)
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/f1d4fc52-2294-49b5-b052-6ceb18f78d89" />
+
+<img width="506" height="413" alt="image" src="https://github.com/user-attachments/assets/b2bbaae7-b243-460f-9d0b-2f16bf611fe9" />
+
+#### L6: Labs Sky130 Vt
+
+- Lets find out theresold voltage for IdVgs curve
+- To get the theresold voltage , we have to draw a tangent to the curve and mark the point where tangent is intersecting the X-axis
+
+<img width="506" height="413" alt="image" src="https://github.com/user-attachments/assets/b2bbaae7-b243-460f-9d0b-2f16bf611fe9" />
+
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5eb5b6ce-4e6d-422e-ab20-2045e9692457" />
+
+- The point of intersection of X-axis around 0.77 volts(vds).
+
+### CMOS voltage transfer characteristics (VTC)
+
+#### L1: MOSFET as a switch
+
+- When ever the Vgs > Vt then only device get turn on.
+- ∣Vgs∣>∣Vt​∣ then only Switch gets closed and device can do its work.
+- Here, Transistor acts a Switch under the following conditions.
+
+<img width="675" height="357" alt="image" src="https://github.com/user-attachments/assets/b40ab43b-4f28-4493-8dd7-fae904f53d97" />
+
+- **CMOS** is Know as Complimentary MOSFET, because it can operating by using complimentary logic
+- here PMOS at the top and NMOS at the bottom
+- Source of PMOS connected to Vdd and Soucre NMOS connected to Vss
+- Both the Gates tied together and connected to Vin
+- Both of the drains tied together and connected to the Vout 
+- Load(CL) could be anything, it would be loading for the next i/p transistor. it is can connected by either short or long wire.
+- Vgs for NMOS is Vss-Vin (+ ve Vgs)
+- Vgs for PMOS is Vin-Vdd (- ve Vgs).
+- --> if Vin = 0Volts and Vdd  = Vdd Volts
+- --> then Vgs = 0 - Vdd = - Vdd (full scale voltage) as the result of this PMOS will get turn on
+- PMOS get turn off if Vin = Vdd and NMOS turn on
+
+<img width="893" height="505" alt="image" src="https://github.com/user-attachments/assets/f0156340-4af3-4427-9586-3889b1df9f75" />
+
+
+
+
+
 
 
 
