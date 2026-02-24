@@ -500,9 +500,87 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - Direction of the current flow is important
 - we adding more  meaningful conventions 
 
-<img width="901" height="492" alt="image" src="https://github.com/user-attachments/assets/25651aa5-a1ef-4fe9-8ac4-ce99e51f9087" />
+<img width="501" height="402" alt="image" src="https://github.com/user-attachments/assets/25651aa5-a1ef-4fe9-8ac4-ce99e51f9087" />
 
 
+#### L3 PMOS/NMOS drain current v/s drain voltage
+
+##### By Observation
+
+<img width="507" height="379" alt="image" src="https://github.com/user-attachments/assets/6172ff7c-10a9-4a49-8de4-9c1c64a2a2b8" />
+
+- VgsN = Vin - Vss = **Vin**
+- VdsN = **Vout**
+- VgsP =  **Vin - Vdd** (carefully rememeber not only Vin and also less than thersold voltage to get turn on)
+- VdsP =  **Vout - Vdd**
+- IdsP = (-) IdsN
+##### Derving the load current
+
+- NMOS IdsN vs VdsN Curve
+- PMOS IdsP vs VdsP Curve (is Inversion of the NMOS)
+  
+<img width="892" height="499" alt="image" src="https://github.com/user-attachments/assets/d0cf7e41-1dfa-44ae-83ec-0d96536f10bd" />
+
+#### L4: Step1 – Convert PMOS gate-source-voltage to Vin
+
+- When ever input Voltage goes from 0 to 1.
+- The output voltage will goes from logic 1 to logic 0 on the application of 0 to 1.
+- All of them are in the function of Vin and Vout only.
+- The internal node voltages are not even visible to a user, because those are not use in any kind of digital device
+
+  ##### Voltage tranfer characterstics
+
+<img width="500" height="404" alt="image" src="https://github.com/user-attachments/assets/447c669a-e5f0-40e2-9e61-77e2d4834563" />
+
+- Shifting of the curve takes place IdsP to IdsN
+- By using this formula
+   --> Vin - Vdd = VgsP
+   --> Vin = VgsP + Vdd
+- Here Vdd = 2 volts
+- Converting all Vgsp into Vin
+
+
+#### L5 Step2 & Step3 – Convert PMOS and NMOS drain-source-voltage to vout
+
+- Mirror Image with respective X-axis(IdsP = -IdsN)
+- we have to convert the whole curve into Vout
+- Vout = 0 ,there is a finite current flow, then the capacitance of the ouput capacitor is completely discharge . We need to charge the capacitance.
+- This comes when PMOS is clud together with NMOS (not independent one)
+
+ --> VdsP = Vout - Vdd
+ --> Vout = VdsP + Vdd (Vdd = 2V)
+
+- By shifting the curve with the Value of Postive Vdd
+- after shifting by Vdd then  Vout = 2V then current is to be zero, its states that output capcitor is completely charge.
+- Load curve for PMOS which is a function of Vin an Vout
+
+<img width="500" height="304" alt="image" src="https://github.com/user-attachments/assets/aebfe707-27b4-445c-8a4c-a31a346a549f" />
+
+##### Load Curve for NMOS transistor using the above equations
+
+- just changing the Nable by using this equations and plot the values as same Id vs VdsN
+- VgsN = Vin - Vss = Vin
+- VdsN = Vout
+
+<img width="507" height="396" alt="image" src="https://github.com/user-attachments/assets/46190be0-d906-4747-8e2a-7e1a4dbc1e82" />
+
+<img width="408" height="319" alt="image" src="https://github.com/user-attachments/assets/4f806b17-62a2-4f7f-8d38-d249d5735f63" />
+
+- By merging the two curves in the Vin and Vout
+
+<img width="505" height="304" alt="image" src="https://github.com/user-attachments/assets/c126f794-1f01-460d-aa91-bf0dcc43a9b8" />
+
+#### L6: Step4 – Merge PMOS – NMOS load curves and plot VTC
+
+- By superimposing 2 curves and identify the intersection points where PMOS and NMOS meets according to the operation modes (Vout Vs Vin)
+- When from the PMOS curve, Vin = 0 and Vout = 2. Here, NMOS is in Cutoff region i.e completely turned off and PMOS is in Linear region.
+- When from the PMOS curve, Vin = 0.5 and 1.5 < Vout < 2. Here, NMOS is in Saturation region  and PMOS is in Linear region.
+- When from the PMOS curve, Vin = 1 and 0.5 < Vout < 1.5. Here, NMOS is in Saturation region and PMOS is in Saturation region.
+- Here is the area for the CMOS for high Gain state. any little change in the input huge impact in the output. preferable for most of the anlog devices.
+- When from the PMOS curve, Vin = 1.5 and 0 < Vout < 0.5. Here, NMOS is in Linear region and PMOS is in Saturation region.
+- When from the PMOS curve, Vin = 2 and Vout = 0. Here, NMOS is in cutoff region i.e completely turned off and PMOS is in Saturation region.
+
+<img width="883" height="491" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
 
 
 
