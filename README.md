@@ -481,6 +481,26 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - --> then Vgs = 0 - Vdd = - Vdd (full scale voltage) as the result of this PMOS will get turn on
 - PMOS get turn off if Vin = Vdd and NMOS turn on
 
+<img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/66f2a542-383b-4e0c-8ede-c5868f137e02" />
+
+#### L2: Introduction to standard MOS voltage current parameters
+
+- To turn on PMOS -Vgs is less than -Vt
+- Vin is Low and equal to "0 V"
+
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/c430e8f6-94f0-454c-8a26-3bc99faddf50" />
+
+##### We are watching the voltage conditions
+
+- It is very important to know the direction of current
+- all the CL got discharge then Vout is zero, due direct path exist between Vout and Vss
+
+<img width="504" height="309" alt="image" src="https://github.com/user-attachments/assets/3bce9881-5952-4faa-961d-42176c7efe42" />
+
+- Direction of the current flow is important
+- we adding more  meaningful conventions 
+
+<img width="901" height="492" alt="image" src="https://github.com/user-attachments/assets/25651aa5-a1ef-4fe9-8ac4-ce99e51f9087" />
 
 
 
@@ -511,7 +531,17 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/e4be051b-9f05-45d1-861f-b22f36239742" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
