@@ -128,7 +128,7 @@ A transistor is a semiconductor device that can control the current flow through
 -  εox is Oxide permittivity = 3.97x εo(Relative permittivity)
 -  3.5 x 10e-11 F/m
 -  tox = oxide thickness
-  
+   
 -<img width="844" height="421" alt="image" src="https://github.com/user-attachments/assets/3a5d414e-b6f1-442d-a597-5a3c8086d5db" />
 
 - Drift current is been measured as velocity of the charge carriers multipiled by avaliable charges over the channel width (complete area).
@@ -350,7 +350,7 @@ Vds^2 / 2 term in the current equation.
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/ab3233b1-350c-4016-a480-026fc55b0b11" />
 
-- Barely look like qudratic  
+- Barely look like qudratic for both lower and higher values of gate voltage(Vgs)  
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
 
 
@@ -359,15 +359,49 @@ Vds^2 / 2 term in the current equation.
 - At saturation region, the drain current (Id) is a switching from Quadratic to Linear dependence by increasing the Vgs.
 - Reason for this is Velocity Saturation in the short channels
 
-<img width="1026" height="628" alt="image" src="https://github.com/user-attachments/assets/b3ff6b1c-b3b4-40d6-af04-e655316fe734" />
+<img width="506" height="328" alt="image" src="https://github.com/user-attachments/assets/b3ff6b1c-b3b4-40d6-af04-e655316fe734" />
 
-Barely look like linear
+Barely look like qudaratic for lower values of gate voltage and linear for higher values of gate voltage(Vgs)
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4c6b54a7-7dc2-467d-9a4a-bf4d87937c27" />
 
 #### L3 Velocity saturation at lower and higher electric fields
 
-<img width="894" height="518" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" />
+<img width="504" height="300" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" />
+
+- Concept of Velocity Saturation Effect states that, your velocity tends to linear for lower value of electric field(ε) . after certain point (cutoff/critical(εc)) velocity remains constant for higher electric field(​ε)
+
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/07919d03-f985-4de1-9989-1d661bff8302" />
+
+- εc ​<= ε ----> velocity (m/sec) is linear
+- εc >= ε ----> velocity (m/sec) is constant, Here we consider Saturation Velocity(Vsat)
+
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/bb5c19d9-f2db-4dd3-b24a-ff94759bc2a1" />
+
+- Re-derving the drain current Equation using the boundary conditions and it become too complex.
+  
+<img width="504" height="308" alt="image" src="https://github.com/user-attachments/assets/2a41b2c0-16d5-449c-b49c-eafa3c1b92ef" />
+
+##### Velocity Saturation Effect with differnt Operational Modes
+
+- One mode of Long channel (>250nm) and another one for short channel (<250nm)
+- For short channel we have velocity saturation region  more compared long channel
+- Here onwards {Vgs-Vt = Vgt}
+
+- Id = 0 , for Vgt<0 in cuttoff mode
+- rest of the remaining modes we are using the following equation
+- Id = (Kn)(1+ λ*Vds)[(Vgt.Vmin)- Vmin**2 / 2]
+- here, Vmin = min(Vgt,Vds,Vdsat)
+
+<img width="507" height="314" alt="image" src="https://github.com/user-attachments/assets/2c9da1e3-b861-4e99-abb8-e1f92be547bd" />
+
+
+
+
+
+
+
+
 
 
 
