@@ -1,4 +1,4 @@
- # NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
+# NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
 
 ## Introduction to Circuit Design and SPICE simulations
 
@@ -418,6 +418,31 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - here it is **ONLY** applicable for **short channel devices**
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/56928d36-2a9f-4550-b30d-634e4f10b8c9" />
+
+##### Observation 2
+
+- When we move from Higher Device to Lower Device, important term to note that Velocity Saturation causes device to saturate early.
+- For the same ( W/L ratio) we can observe different Peak currents
+
+<img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/0e5dc61f-06a9-48e3-ab18-33033076c750" />
+
+#### L5 Labs Sky130 Id-Vgs
+
+- for running W = 0.39 and L = 0.15 (short channel)
+
+<img width="531" height="400" alt="image" src="https://github.com/user-attachments/assets/1a09ffdb-57bf-4936-b14c-a109e2b629ca" />
+
+- here, is  the plot for  IdVds
+
+<img width="506" height="400" alt="image" src="https://github.com/user-attachments/assets/991a7a4f-9074-4c52-ac43-c85f3e704b6a" />
+
+- From this plot , we can observe that for lower value of Vgs we get Quadratic and higher values of the Vgs we getting linear
+
+<img width="409" height="304" alt="image" src="https://github.com/user-attachments/assets/d7e2d15b-9126-492c-924e-6ed56b8844df" />
+
+
+
+
 
 
 
