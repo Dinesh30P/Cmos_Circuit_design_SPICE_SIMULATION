@@ -455,7 +455,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="506" height="413" alt="image" src="https://github.com/user-attachments/assets/b2bbaae7-b243-460f-9d0b-2f16bf611fe9" />
 
-<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5eb5b6ce-4e6d-422e-ab20-2045e9692457" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/5eb5b6ce-4e6d-422e-ab20-2045e9692457" />
 
 - The point of intersection of X-axis around 0.77 volts(vds).
 
@@ -481,7 +481,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - --> then Vgs = 0 - Vdd = - Vdd (full scale voltage) as the result of this PMOS will get turn on
 - PMOS get turn off if Vin = Vdd and NMOS turn on
 
-<img width="893" height="505" alt="image" src="https://github.com/user-attachments/assets/f0156340-4af3-4427-9586-3889b1df9f75" />
+
 
 
 
