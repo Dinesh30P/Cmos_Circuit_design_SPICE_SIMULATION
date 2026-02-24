@@ -233,7 +233,7 @@ Vds^2 / 2 term in the current equation.
 
 ##### SPICE setup Flow chart
 
-<img width="426" height3"491" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
+<img width="506" height="401" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
 
 ##### Spice Netlist 
 - A SPICE netlist is a plain text file that defines the components and connections of an electronic circuit, allowing it to be analyzed and simulated using SPICE software.
