@@ -1,4 +1,4 @@
-<img width="894" height="518" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" /># NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
+# NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
 
 ## Introduction to Circuit Design and SPICE simulations
 
