@@ -229,6 +229,7 @@ Vds^2 / 2 term in the current equation.
 - This delays are accurate and used to Static Timing Analysis(STA)
 
 ##### SPICE Model Parameters 
+
 - The highlighted ones are the constants will come from the foundaries when we tackle advance technology nodes
 
 <img width="512" height="321" alt="image" src="https://github.com/user-attachments/assets/eb44d327-72f0-4f90-8070-435ce1113d0e" />
@@ -238,6 +239,7 @@ Vds^2 / 2 term in the current equation.
 <img width="506" height="401" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
 
 ##### Spice Netlist 
+
 - A SPICE netlist is a plain text file that defines the components and connections of an electronic circuit, allowing it to be analyzed and simulated using SPICE software.
 
 <img width="503" height="396" alt="image" src="https://github.com/user-attachments/assets/088e3d30-d3eb-455e-9a0b-fa1683dce2c4" />
@@ -257,6 +259,7 @@ Vds^2 / 2 term in the current equation.
 <img width="506" height="409" alt="image" src="https://github.com/user-attachments/assets/7da08862-1bc6-4461-a3c7-9d434fcc8125" />
 
 - MOSFET have 4 terminals i.e Drain, Gate, Source, Substrate/Bulk
+- 
 ##### For the First Component (MOSFET)
 - M1 --> MOSFETXX (XX- number), Vdd --> Drain, 0 --> Source node, 0 --> Substrate node, NMOS --> it comes from technology file, W= 1.8µ --> Width of the Gate in microns, L = 1.2µ --> length of the Gate in Micron.
 
@@ -264,9 +267,9 @@ Vds^2 / 2 term in the current equation.
 - R1 --> ResistorXX (XX- number), in --> First terminal, n1 --> Node 1 {R1 is between in and n1}, 55 Ω --> Resistance  Value in Ohms
 
 ##### Vdd Source 
+
 - VXX --> Voltage source XX(it will between 2 nodes i.e Vdd and Zero), here  Vdd is 2.5 Volts.
 - Vin lies in between in(postive terminal)and Zero (negative terminal), here  Vin is 2.5 Volts.
-
 - Once we define the netlist, next we have to define the technology file.
 
 <img width="420" height="200" alt="image" src="https://github.com/user-attachments/assets/4bd4c5c2-375c-48c6-8573-4312ff961239" />
@@ -333,7 +336,7 @@ Vds^2 / 2 term in the current equation.
 - commands and changing the value of the W and L by using "gedit" in the day2 file in the cloud
 - run the edited file by keeping W= 0.375µ, L= 0.25µ device (W/L = 1.5)
  
-<img width="1113" height="727" alt="image" src="https://github.com/user-attachments/assets/33486745-b082-4ca5-9264-ba61978fe095" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/33486745-b082-4ca5-9264-ba61978fe095" />
 
 - here , the ploting of W= 0.375µ, L= 0.25µ device (W/L = 1.5) in the ngspice
 
@@ -469,7 +472,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - ∣Vgs∣>∣Vt​∣ then only Switch gets closed and device can do its work.
 - Here, Transistor acts a Switch under the following conditions.
 
-<img width="675" height="357" alt="image" src="https://github.com/user-attachments/assets/b40ab43b-4f28-4493-8dd7-fae904f53d97" />
+<img width="500" height="407" alt="image" src="https://github.com/user-attachments/assets/b40ab43b-4f28-4493-8dd7-fae904f53d97" />
 
 - **CMOS** is Know as Complimentary MOSFET, because it can operating by using complimentary logic
 - here PMOS at the top and NMOS at the bottom
@@ -521,7 +524,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - NMOS IdsN vs VdsN Curve
 - PMOS IdsP vs VdsP Curve (is Inversion of the NMOS)
   
-<img width="892" height="499" alt="image" src="https://github.com/user-attachments/assets/d0cf7e41-1dfa-44ae-83ec-0d96536f10bd" />
+<img width="502" height="309" alt="image" src="https://github.com/user-attachments/assets/d0cf7e41-1dfa-44ae-83ec-0d96536f10bd" />
 
 #### L4: Step1 – Convert PMOS gate-source-voltage to Vin
 
@@ -582,7 +585,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - When from the PMOS curve, Vin = 1.5 and 0 < Vout < 0.5. Here, NMOS is in Linear region and PMOS is in Saturation region.
 - When from the PMOS curve, Vin = 2 and Vout = 0. Here, NMOS is in cutoff region i.e completely turned off and PMOS is in Saturation region.
 
-<img width="883" height="491" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
+<img width="503" height="401" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
 
 
 
