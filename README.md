@@ -1,4 +1,4 @@
-# NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
+ # NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
 
 ## Introduction to Circuit Design and SPICE simulations
 
@@ -9,7 +9,7 @@
 -  To optimize the Performance.
 -  To reduce the Cost and improve timing efficiency.
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d0cd4084-6e16-4550-97e7-6f5c899e44ce" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/d0cd4084-6e16-4550-97e7-6f5c899e44ce" />
 
 
 ###### What is circuit design and SPICE?
@@ -19,7 +19,7 @@
 ###### Why do we need SPICE?
 - The clocktree synthesis, timing, crosstalks are build on the SPICE, without having SPICE there won't be delays and if there is no delays physical design flow, crosstalk won't make any sense.
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ea9a8b75-a1f8-4b46-9179-3cd58b61fc3f" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ea9a8b75-a1f8-4b46-9179-3cd58b61fc3f" />
 
 ###### Clocktree sysnthesis
 - delay table consists of  i/p slew and o/p load for buffer types (level 1, level 2)
@@ -29,7 +29,7 @@
 - Buffer differentiation is part of circuit design.
 - Length(L) and  Width(W)  decide the Drive current (I) that results in the timing curves.
 
-<img width="500" height="600" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
 #### L2: Introduction to basic element in Circuit design – NMOS
 
@@ -54,47 +54,47 @@ A transistor is a semiconductor device that can control the current flow through
 - Source, Connect Drain, and Body to GND
 - Now, Source-Body and Drain-Body acts as a pn junction diode
 - As both junctions are OFF, there is a huge resistance between Source and Drain, thus no conductivity between Source and Drain.
-<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" /> <br>
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/20b7652d-1b59-42d7-bfcc-6b73ef21a153" /> <br>
 
 - When a small positive voltage is applied to the gate, an electric field is established across the gate oxide.
 - Then the gate oxide acts as a capacitor, causing repells the holes(postive charges) in the p-type substrate deeper into the substrate, leaving behind immobile negative ions near the surface.
 - As the negative charges are accumulate near to the gate oxided, a depletion region forms (depleting the majority charge carries) inside the NMOS near to the surface.
    
-<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
 
 #### L3: Strong inversion and threshold voltage
 - We can also state that the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
 - Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
 - In order to decides the thershold voltage equation. we have to consider the body terminal.
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/4fe867eb-148a-47aa-90a4-052ea7cd70bd" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/4fe867eb-148a-47aa-90a4-052ea7cd70bd" />
 - by applying Vsb = 0 (left side)
 - by applying Vsb = +ve value (right side), depletion width will be more at source side be
 
-<img width="600" height="371" alt="image" src="https://github.com/user-attachments/assets/8ff3157a-0861-4dee-8388-0a73fa2e137f" />
+<img width="500" height="401" alt="image" src="https://github.com/user-attachments/assets/8ff3157a-0861-4dee-8388-0a73fa2e137f" />
 
-<img width="600" height="373" alt="image" src="https://github.com/user-attachments/assets/873e3efb-05cf-4135-b877-3da90caf3497" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/873e3efb-05cf-4135-b877-3da90caf3497" />
 
 - Applying a positive voltage to the substrate, an additional reverse bias is observed, as the source is now more negatively charged and the substrate is positively charged.
 - This increases the depletion layer width more near the source.
 
-<img width="600" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
 
 #### L4: Threshold voltage with positive substrate potential
 
 - On the left side(Vbs = 0), there is the surface inversion takes places. 
 - Semiconductor surface inverts to n-type material at voltage Vgs = Vto
 
-<img width="890" height="431" alt="image" src="https://github.com/user-attachments/assets/e8d15ecc-87b5-4408-b3dd-fc8665361189" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/e8d15ecc-87b5-4408-b3dd-fc8665361189" />
 
 - On the right Side(Vbs = +ve value), there is the less surface inversion takes place becasue of few charges are pulled towards source.
 - An additional voltage (say V1) is required to overcome the increased depletion charge.
 - At some potential,  Semiconductor surface inverts to n-type material at voltage Vgs = Vto + V1 
 - from both of the cases, we have to concluded that in presence of substrate bias 'Vsb', additional potential is required for strong inversion.
 
-<img width="440" height="176" alt="image" src="https://github.com/user-attachments/assets/8e548b49-710d-448e-9fc3-8268be332791" />
+<img width="400" height="306" alt="image" src="https://github.com/user-attachments/assets/8e548b49-710d-448e-9fc3-8268be332791" />
 
-<img width="361" height="256" alt="image" src="https://github.com/user-attachments/assets/d14a1439-d6e6-4569-b071-61841bdd42c7" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/d14a1439-d6e6-4569-b071-61841bdd42c7" />
 
 - These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.
 
@@ -105,7 +105,7 @@ A transistor is a semiconductor device that can control the current flow through
 ##### Resistive Operation
 - Vgs is increases then channel width is increases, becauses of the induced charges casued by the gate voltage
 
-<img width="600" height="349" alt="image" src="https://github.com/user-attachments/assets/e0472695-f013-4799-a17d-214e7a7f9368" />
+<img width="500" height="409" alt="image" src="https://github.com/user-attachments/assets/e0472695-f013-4799-a17d-214e7a7f9368" />
 
 - Lets, consider Vgs = 1V,
 - Vds = 0.05V
@@ -115,7 +115,7 @@ A transistor is a semiconductor device that can control the current flow through
 - Here, X-axis represents the channel length and Y-axis represents the channel width
 - V(x) is the Voltage at a point 'x' along channel 
 
-<img width="539" height="439" alt="image" src="https://github.com/user-attachments/assets/fd6929e7-76e6-41c5-9226-3439e1136fcf" />
+<img width="509" height="4o9" alt="image" src="https://github.com/user-attachments/assets/fd6929e7-76e6-41c5-9226-3439e1136fcf" />
 
 - Gate to channel Voltage at that point on the application of Vds is Vgs-V(x)
 
@@ -129,21 +129,21 @@ A transistor is a semiconductor device that can control the current flow through
 -  3.5 x 10e-11 F/m
 -  tox = oxide thickness
    
--<img width="844" height="421" alt="image" src="https://github.com/user-attachments/assets/3a5d414e-b6f1-442d-a597-5a3c8086d5db" />
+-<img width="504" height="401" alt="image" src="https://github.com/user-attachments/assets/3a5d414e-b6f1-442d-a597-5a3c8086d5db" />
 
 - Drift current is been measured as velocity of the charge carriers multipiled by avaliable charges over the channel width (complete area).
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
 
 #### L3: Drain current model for linear region of operation
 
 - velocity is Vn(x), W is width, mobility of the carriers and electric field
 
-<img width="292" height="410" alt="image" src="https://github.com/user-attachments/assets/a85ac293-afbd-4ead-aa22-1382629a3d76" />
+<img width="400" height="310" alt="image" src="https://github.com/user-attachments/assets/a85ac293-afbd-4ead-aa22-1382629a3d76" />
 
 - Substituing and Intergrating dx over channel lenght L will give the V-I relation of NMOS transistor.
 
-<img width="315" height="327" alt="image" src="https://github.com/user-attachments/assets/e0ff3e90-7c15-44f2-88f7-36576ca0c9b6" />
+<img width="405" height="307" alt="image" src="https://github.com/user-attachments/assets/e0ff3e90-7c15-44f2-88f7-36576ca0c9b6" />
 
 - when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
 
@@ -151,13 +151,13 @@ A transistor is a semiconductor device that can control the current flow through
 
 Id = (Kn)*{(Vgs-Vt)Vds - Vds**2 / 2} 
   
-<img width="503" height="306" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
+<img width="503" height="406" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
 #### L4: SPICE conclusion to resistive operation
 
 - For linear region operation we have to make sure that  (Vds <= Vgs-Vt) so we neglection the 
 Vds^2 / 2 term in the current equation.
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/31b06dbb-93c9-46de-a840-4eb047d1a460" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/31b06dbb-93c9-46de-a840-4eb047d1a460" />
 
 - here we have sweep the values of Vds ranging for 0 to 2.05 but maintaining the condition         Vds <= Vgs-Vt to be in the linear region or restitve region of operation.
 - if Vds >= Vgs-Vt then device enters into the saturation region
@@ -190,7 +190,7 @@ Vds^2 / 2 term in the current equation.
 - i.e channel begins to disappear(linearity of the current flow changes)
 - At this point Vt = Vgs-Vds(surface iversion just happens / about to happen )
 
-<img width="504" height="432" alt="image" src="https://github.com/user-attachments/assets/d197b2b5-2be4-44da-958c-e235c6dcfd13" />
+<img width="504" height="402" alt="image" src="https://github.com/user-attachments/assets/d197b2b5-2be4-44da-958c-e235c6dcfd13" />
 
  ## Pinch off Region
 
@@ -229,30 +229,30 @@ Vds^2 / 2 term in the current equation.
 ##### SPICE Model Parameters 
 - The highlighted ones are the constants will come from the foundaries when we tackle advance technology nodes
 
-<img width="612" height="421" alt="image" src="https://github.com/user-attachments/assets/eb44d327-72f0-4f90-8070-435ce1113d0e" />
+<img width="512" height="321" alt="image" src="https://github.com/user-attachments/assets/eb44d327-72f0-4f90-8070-435ce1113d0e" />
 
 ##### SPICE setup Flow chart
 
-<img width="426" height="491" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
+<img width="426" height3"491" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
 
 ##### Spice Netlist 
 - A SPICE netlist is a plain text file that defines the components and connections of an electronic circuit, allowing it to be analyzed and simulated using SPICE software.
 
-<img width="783" height="396" alt="image" src="https://github.com/user-attachments/assets/088e3d30-d3eb-455e-9a0b-fa1683dce2c4" />
+<img width="503" height="396" alt="image" src="https://github.com/user-attachments/assets/088e3d30-d3eb-455e-9a0b-fa1683dce2c4" />
 
 #### L2: Circuit description in SPICE syntax
 
 - let's give the values for the netlist
 - Here, We can considering 4 nodes (where there is no obstraction we can consider as node)
 
-<img width="437" height="372" alt="image" src="https://github.com/user-attachments/assets/3998d2e2-e461-4278-9b9f-3169d6be1a5a" />
+<img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/3998d2e2-e461-4278-9b9f-3169d6be1a5a" />
 
 - In an electrical circuit, a node is a point where two or more components are connected together. It represents a location where the electrical potential (voltage) is the same for all connected elements.
 - Nodes are used in circuit analysis to determine voltages and currents throughout the system.
 
 ##### DGSS
   
-<img width="806" height="309" alt="image" src="https://github.com/user-attachments/assets/7da08862-1bc6-4461-a3c7-9d434fcc8125" />
+<img width="506" height="409" alt="image" src="https://github.com/user-attachments/assets/7da08862-1bc6-4461-a3c7-9d434fcc8125" />
 
 - MOSFET have 4 terminals i.e Drain, Gate, Source, Substrate/Bulk
 ##### For the First Component (MOSFET)
@@ -278,11 +278,11 @@ Vds^2 / 2 term in the current equation.
 
 ##### For Model Files(Vt,Id...) --> Model Parameters(γ, kn'/2...) are Required
 
-<img width="839" height="444" alt="image" src="https://github.com/user-attachments/assets/163ce3ae-2771-45a8-bcf2-1ffe17f7e2b2" />
+<img width="539" height="404" alt="image" src="https://github.com/user-attachments/assets/163ce3ae-2771-45a8-bcf2-1ffe17f7e2b2" />
 
 - for Nmos model file we have to choose NMOS package (its very important)
 
-<img width="471" height="393" alt="image" src="https://github.com/user-attachments/assets/8cacb959-fbbd-408b-8e41-cfbc1df79ad0" />
+<img width="501" height="403" alt="image" src="https://github.com/user-attachments/assets/8cacb959-fbbd-408b-8e41-cfbc1df79ad0" />
 
 ##### Package in a file (.mod )
 
@@ -291,11 +291,11 @@ Vds^2 / 2 term in the current equation.
 ##### Simulation commands
 - We have to Sweep Drain and Gate Voltage
 
-<img width="690" height="470" alt="image" src="https://github.com/user-attachments/assets/4f64cabc-50ae-41a2-b857-92f23dda6bfc" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/4f64cabc-50ae-41a2-b857-92f23dda6bfc" />
 
 #### L4: First SPICE simulation
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/5c808992-7f65-4902-9f58-f484d7ea67d5" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/5c808992-7f65-4902-9f58-f484d7ea67d5" />
 
 - Id vs Vds Curve
 
@@ -304,7 +304,7 @@ Vds^2 / 2 term in the current equation.
 - Y-axis having Id in µA and X-axis is Vds in Volts
 - we can get to observe different regions in the graph(cut off region on right bottom)which was ploted and we can see Vgs of different plot on right side(which was decreasing from top to bottom)
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/dc7248fb-5f46-4985-8fa1-fafc53617cf0" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/dc7248fb-5f46-4985-8fa1-fafc53617cf0" />
 
 
 - We are sweeping with step of 0.2
@@ -369,7 +369,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="504" height="300" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" />
 
-- Concept of Velocity Saturation Effect states that, your velocity tends to linear for lower value of electric field(ε) . after certain point (cutoff/critical(εc)) velocity remains constant for higher electric field(​ε)
+- Concept of Velocity Saturation Effect states that, your velocity tends to linear for lower value of electric field(ε) . after certain point (critical(εc)) velocity remains constant for higher electric field(​ε)
 
 <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/07919d03-f985-4de1-9989-1d661bff8302" />
 
@@ -390,10 +390,38 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Id = 0 , for Vgt<0 in cuttoff mode
 - rest of the remaining modes we are using the following equation
-- Id = (Kn)(1+ λ*Vds)[(Vgt.Vmin)- Vmin**2 / 2]
+- Id = (Kn)(1+ λ*Vds)[(Vgt.Vmin)- Vmin**2 / 2]  ---->  Drain Current Model
 - here, Vmin = min(Vgt,Vds,Vdsat)
 
 <img width="507" height="314" alt="image" src="https://github.com/user-attachments/assets/2c9da1e3-b861-4e99-abb8-e1f92be547bd" />
+
+#### L4: Velocity saturation drain current model
+
+- Vdsat ----> it is called as technology parameter
+- it is a saturation voltage i.e voltage at which device velocity saturates and is independent of Vgs or Vds.
+-  it is a constant value
+
+##### When Vgt is the Minimum Value
+
+- It comes under saturation region operation. it is true for the both the channel nodes
+
+<img width="500" height="397" alt="image" src="https://github.com/user-attachments/assets/ad6d99a1-b170-4c4f-acab-297429fa4b75" />
+
+##### When Vds is the Minimum Value
+
+- it comes under resistive region operation. it is true for the both the channel nodes
+
+<img width="500" height="393" alt="image" src="https://github.com/user-attachments/assets/39f2e4c6-d279-46c9-84b0-ae5fe4bbde37" />
+
+##### When Vsat is the Minimum Value
+
+- here it is **ONLY** applicable for **short channel devices**
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/56928d36-2a9f-4550-b30d-634e4f10b8c9" />
+
+
+
+
 
 
 
