@@ -618,6 +618,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 ### L3 Labs Sky130 SPICE simulation for CMOS
 
+-  Spice Waveform : Wn = 0.36µ, Wp = 0.84µ, Ln,p = 0.15µ device (Wn/Ln = 2.4, Wp/Lp= 5.6)
 - By using Vim command check the file which already existing in the folder.
 - By using ":q" to quit without changing the file.
 - Run the ngspice and file name 
@@ -668,6 +669,30 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 <img width="383" height="101" alt="image" src="https://github.com/user-attachments/assets/a2e4aafe-581a-4754-9aa4-0913a3026aac" />
 
 - Fall Delay {Xout - Xin} = (4.333 - 4.05)e-9 = 0.2818e-9 =0.2818
+
+## Static behavior evaluation – CMOS inverter robustness – Switching Threshold
+### L1: Switching Threshold, Vm
+
+- Spice Waveform : Wn = Wp = 0.375µ, Ln,p = 0.25µ device (Wn/Ln = Wp/Lp= 1.5)
+-  Spice Waveform : Wn = 0.375µ, Wp = 0.9375µ, Ln,p = 0.25µ device (Wn/Ln = 1.5, Wp/Lp= 3.75)
+- By ploting them, shape of the waveform almost same it implies that CMOS inverter is a Robust device.
+- For Robust design of CMOS logic is widely used for any of the logic gate design
+
+<img width="516" height="406" alt="image" src="https://github.com/user-attachments/assets/5ecce938-1ccc-416a-a6dd-df135886d605" />
+
+- **Switching Thresold (Vm)** is a point whre Vin is Equal to Vout
+- By Drawing a line having slope of 45 degress with X-axis and Identify a Point which is intersecting the point on the curve
+- This are where both PMOS and NMOS are in the Saturation Region
+- If both are turn on there is high chances of leakage current (high possibility the current flow from directly power to ground )
+- When Vin = Vout then gate Voltage is Equal to Drain Voltage i.e Vgs is >>> Vt
+- When Vgs = Vds , the Current flow in the Output side is almost same but direction are different.(IdsP = (-) IdsN)
+
+<img width="502" height="402" alt="image" src="https://github.com/user-attachments/assets/c6a9a803-b9fe-4f6a-9160-79b837389914" />
+
+### L2: Analytical expression of Vm as a function of (W/L)p and (W/L)n
+
+
+
 
 
 
