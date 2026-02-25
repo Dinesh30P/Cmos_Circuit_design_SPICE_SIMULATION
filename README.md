@@ -643,10 +643,10 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="606" height="450" alt="image" src="https://github.com/user-attachments/assets/a264e1a0-71a5-4be0-a9ad-a691256d2e12" />
 
-- For raise delay and Fall delay we have to consider 50% of Vdd
+- For rise delay and Fall delay we have to consider 50% of Vdd
 - Here, 1.8/2 is 0.9 (vdd)
 
-#### For Raise Delay
+#### For Rise Delay
 
 - Zoom out the area out curve (red)- in curve(blue)
 
@@ -656,7 +656,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="400" height="302" alt="image" src="https://github.com/user-attachments/assets/6087a627-fb46-496c-96c7-00f6791e8bdb" />
 
-- Raise Delay {Xout - Xin} = (2.482- 2.151)e-9 = 0.331e-9 secs =0.331 ns.
+- Rise Delay {Xout - Xin} = (2.482- 2.151)e-9 = 0.331e-9 secs =0.331 ns.
 
 #### For Fall Delay
 
@@ -690,6 +690,150 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 <img width="502" height="402" alt="image" src="https://github.com/user-attachments/assets/c6a9a803-b9fe-4f6a-9160-79b837389914" />
 
 ### L2: Analytical expression of Vm as a function of (W/L)p and (W/L)n
+
+- IdsP + IdsN = 0
+
+<img width="530" height="405" alt="image" src="https://github.com/user-attachments/assets/9278d903-681c-450d-96c3-0fe4183063f5" />
+
+- Caluclating IdsN and IdsP
+
+<img width="509" height="403" alt="image" src="https://github.com/user-attachments/assets/413509ff-0ef9-4b43-a2e6-03de707fcaec" />
+
+- Here R is the Constant
+
+<img width="569" height="400" alt="image" src="https://github.com/user-attachments/assets/93c7496a-5719-44bd-a9ad-d91aa9e4dca3" />
+
+### L3: Analytical expression of (W/L)p and (W/L)n as a function of Vm
+
+- We derving the conditions, Exactly half of the power supply voltage. To achive that what should be the value of W/L ratio of PMOS and NMOS.
+- Alternatively , the required ratio of PMOS v/s NMOS transistor size can be derived, such that Vm is Set
+
+<img width="407" height="300" alt="image" src="https://github.com/user-attachments/assets/3f7158a8-cfd3-4161-8fa0-abdc6ad9a22b" />
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/9ab5f294-13e1-40fb-8fc9-6a7787709b4a" />
+
+- Here we are getting the relation into the Vm
+
+<img width="408" height="300" alt="image" src="https://github.com/user-attachments/assets/50d7543f-1ab5-4a9a-8e15-6e343b08e9b5" />
+
+- By simply the equation we are able to get the following relation
+  
+<img width="408" height="300" alt="image" src="https://github.com/user-attachments/assets/6d56bb9d-65be-431d-a113-8e1e0b0b0802" />
+
+- Here , We getting the value of (W/L) PMOS  = x * (W/L) NMOS
+
+### L4: Static and dynamic simulation of CMOS inverter
+
+- By using this relation we able to do some SPICE simulations
+
+<img width="244" height="203" alt="image" src="https://github.com/user-attachments/assets/c22c0d27-389a-4c0e-880f-f0d46ec008a6" />
+
+<img width="507" height="400" alt="image" src="https://github.com/user-attachments/assets/117269b5-4d10-48d3-ab1a-2584e326bd7c" />
+
+### L5 Static and dynamic simulation of CMOS inverter with increased PMOS width
+
+- Here the  static and dynamic simulation with Increased PMOS
+
+<img width="518" height="406" alt="image" src="https://github.com/user-attachments/assets/b44874f4-485b-45b7-b5e4-31392bf5ae0d" />
+
+- Rougly we able to get the Vm value (1.25V), to increase the Size of the PMOS  then curve shift towards the right side
+
+<img width="504" height="407" alt="image" src="https://github.com/user-attachments/assets/43e8ecbc-8da5-499f-8953-1deaa833f926" />
+
+- Rougly we able to get the Vm value (1.35V), to increase the Size of the PMOS  then curve shift towards the right side
+
+<img width="503" height="402" alt="image" src="https://github.com/user-attachments/assets/391fd05e-db04-4390-9d93-bf40c7474308" />
+
+- Rougly we able to get the Vm value (1.4V), to increase the Size of the PMOS  then curve shift towards the right side
+
+<img width="500" height="404" alt="image" src="https://github.com/user-attachments/assets/31c3659b-bb54-4994-bd95-4bc51b0ee904" />
+
+- Rise delay significantly reduses (the time required to charge the output capacitor completely)
+- While increasing the size of the PMOS then rise delay decreases significantly(bigger area is the reason)
+
+<img width="530" height="309" alt="image" src="https://github.com/user-attachments/assets/fd4097f5-f986-478e-8693-9d62684292f9" />
+
+### L6: Applications of CMOS inverter in clock network and STA
+
+- There is 50mv change by varing the PMOS and (multiple of  two to three )NMOS parameter
+
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/1352945e-cdf5-4bdb-afa7-6d49b5116ebe" />
+
+- There is Equal rise and fall time at vm = 1.2V
+- Approximately equal rise-fall delay Typical characterstic for a clock inverter / Buffer
+- Even PMOS is bigger than the NMOS the resistance of them are almost same
+
+<img width="309" height="412" alt="image" src="https://github.com/user-attachments/assets/69fecf44-bf30-4571-ae36-478a3c3cfcb9" />
+
+#### Irregular Inverter / Buffer
+
+<img width="416" height="305" alt="image" src="https://github.com/user-attachments/assets/1cd15c56-2519-4bc3-84ed-eb337f4276ec" />
+
+- The condtion for here is either Slack should be Positive or Zero
+- Data arrival time < Data required time
+
+<img width="508" height="405" alt="image" src="https://github.com/user-attachments/assets/5d94de2b-5b73-4b1c-b40a-ed33e4ad0ca3" />
+
+- For Clock tower we are using Inv_cx and rest of them called as Inv_1x,Inv_2x,Inv_3x,Inv_4x
+
+- One can used as Clock cell and rest of them can used as data path
+
+# NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
+## Static behavior evaluation – CMOS inverter robustness – Noise margin
+
+### L1: Introduction to noise margin
+
+- Consider basic Inverter when i/p is 0 then o/p is 1 and vise verse
+
+- Noise Margin: Noise margin is the amount of unwanted disturbance (noise voltage) that a digital circuit can tolerate without changing its intended logic state.
+
+- Vil = input Low Voltage
+- Vih = input High Voltage
+- Vol = output Low Voltage
+- Voh = output High Voltage
+
+- High Noise Margin(HNM) = Voh - Vih (high)
+- Low Noise Margin(LNM) = Vil- Vol (low)
+
+<img width="500" height="412" alt="image" src="https://github.com/user-attachments/assets/5b026032-2883-48fa-8f48-1f19136941d8" />
+
+### L2: Noise margin voltage parameters
+
+- Slope is the change in the output voltage /  change in the input voltage
+- Here slope is negative
+
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/1fd29308-36e7-4efd-b3cf-2177fab31c8e" />
+
+- Acutal one on the left side and ideal one on the right side
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
