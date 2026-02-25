@@ -587,6 +587,109 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="503" height="401" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
 
+# NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
+## Voltage transfer characteristics – SPICE simulations
+
+### L1: SPICE deck creation for CMOS inverter
+
+####  VTC Spice Simulations
+
+- Spice deck is a connectivity information about the netlist
+- It has Connectivity Information, it also provide input to the simulation, it also having tap points at which we can take the output
+- Here, we are making spice deck for complete netlist
+- We also looking into significance of Substrate pin, where it tunes thersold voltage of PMOS and NMOS.
+- ideally PMOS is twice or thrice than NMOS component values i.e (W/L) .
+- but here considering same componets for both PMOS and NMOS.
+- Usually voltage(2.5 V) kept multiple of channel length(0.25 x 10)
+- Identify the nodes
+- Node : there is a component between two points.
+- Node names : in , out, Vdd, 0
+
+<img width="505" height="390" alt="image" src="https://github.com/user-attachments/assets/91e2aede-9a68-4f5e-80b8-fa3a062ae9d6" />
+
+### L2: SPICE simulation for CMOS inverter
+
+<img width="560" height="412" alt="image" src="https://github.com/user-attachments/assets/3fd0246b-ba45-4c97-846a-79eb50a6958e" />
+
+- Spice Waveform : Wn = Wp = 0.375µ, Ln,p = 0.25µ device (Wn/Ln = Wp/Lp= 1.5)
+- Edit the file by the Required parameters
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b4f6b417-cb4a-4afd-927c-3ba315dc3f57" />
+
+### L3 Labs Sky130 SPICE simulation for CMOS
+
+- By using Vim command check the file which already existing in the folder.
+- By using ":q" to quit without changing the file.
+- Run the ngspice and file name 
+- Now using plot command "**plot out vs in**"
+
+- This is the required plot
+  
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/3fc14f8a-d767-49bc-8a01-0db92cff4180" />
+
+- This is the dervied plot
+  
+<img width="502" height="409" alt="image" src="https://github.com/user-attachments/assets/b0e80393-b728-4f96-a268-5da6a27e95a1" />
+
+#### Now doing transient analysis
+
+- By using Vim command check the file which already existing in the folder.
+- By using ":q" to quit without changing the file.
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/7d421fa7-b889-4670-aedf-fc8f724b28e7" />
+
+<img width="503" height="404" alt="image" src="https://github.com/user-attachments/assets/843b1e31-49c6-4d80-8b64-d937fa78d08c" />
+
+<img width="606" height="450" alt="image" src="https://github.com/user-attachments/assets/a264e1a0-71a5-4be0-a9ad-a691256d2e12" />
+
+- For raise delay and Fall delay we have to consider 50% of Vdd
+- Here, 1.8/2 is 0.9 (vdd)
+
+#### For Raise Delay
+
+- Zoom out the area out curve (red)- in curve(blue)
+
+<img width="503" height="404" alt="image" src="https://github.com/user-attachments/assets/1eb0a52c-6ede-4c7d-89cc-9da9f5195d04" />
+
+- At point 0.9, **Xout - Xin**
+
+<img width="400" height="302" alt="image" src="https://github.com/user-attachments/assets/6087a627-fb46-496c-96c7-00f6791e8bdb" />
+
+- Raise Delay {Xout - Xin} = (2.482- 2.151)e-9 = 0.331e-9 secs =0.331 ns.
+
+#### For Fall Delay
+
+- Zoom out the area out curve (red)- in curve(blue)
+
+<img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/6c0496da-e4df-4bcb-af35-4b22599bd728" />
+
+- At point 0.9, **Xout - Xin**
+
+<img width="383" height="101" alt="image" src="https://github.com/user-attachments/assets/a2e4aafe-581a-4754-9aa4-0913a3026aac" />
+
+- Fall Delay {Xout - Xin} = (4.333 - 4.05)e-9 = 0.2818e-9 =0.2818
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
 
 
