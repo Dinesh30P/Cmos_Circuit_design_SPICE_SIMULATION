@@ -318,9 +318,9 @@ Vds^2 / 2 term in the current equation.
 - for this transistor we are consider a thersold voltage around 0.55 Volts.
 - for selection the point on 1.4 vgs we will get repective Vds by doing projection on X-axis.
 
-## NgspiceSky130 - Day 2 - Velocity saturation and basics of CMOS inverter VTC
+# NgspiceSky130 - Day 2 - Velocity saturation and basics of CMOS inverter VTC
 
-### SPICE simulation for lower nodes and velocity saturation effect
+## SPICE simulation for lower nodes and velocity saturation effect
 
 #### L1: SPICE simulation for lower nodes
 
@@ -588,8 +588,8 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="503" height="401" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
 
-## NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
-### Voltage transfer characteristics – SPICE simulations
+# NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
+## Voltage transfer characteristics – SPICE simulations
 
 #### L1: SPICE deck creation for CMOS inverter
 
@@ -780,8 +780,8 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - One can used as Clock cell and rest of them can used as data path
 
-## NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
-### Static behavior evaluation – CMOS inverter robustness – Noise margin
+# NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
+## Static behavior evaluation – CMOS inverter robustness – Noise margin
 
 #### L1: Introduction to noise margin
 
@@ -882,8 +882,9 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
  - High Noise Margin(HNM) = Voh - Vih = 1.722 - 0.975 = 0.747
  - Low Noise Margin(LNM) = Vil- Vol = 0.758 - 0.113 = 0.645
 
-## NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
-### Static behavior evaluation – CMOS inverter robustness – Power supply variation
+# NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
+## Static behavior evaluation – CMOS inverter robustness – Power supply variation
+
 #### L1: Smart SPICE simulation for power supply variations
 
 - We are analysing static behavior EValuation :CMS inverter Robudstness
