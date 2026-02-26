@@ -154,6 +154,7 @@ A transistor is a semiconductor device that can control the current flow through
 Id = (Kn)*{(Vgs-Vt)Vds - Vds**2 / 2} 
   
 <img width="503" height="406" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
+
 #### L4: SPICE conclusion to resistive operation
 
 - For linear region operation we have to make sure that  (Vds <= Vgs-Vt) so we neglection the 
@@ -587,12 +588,12 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="503" height="401" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
 
-# NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
-## Voltage transfer characteristics – SPICE simulations
+## NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
+### Voltage transfer characteristics – SPICE simulations
 
-### L1: SPICE deck creation for CMOS inverter
+#### L1: SPICE deck creation for CMOS inverter
 
-####  VTC Spice Simulations
+#####  VTC Spice Simulations
 
 - Spice deck is a connectivity information about the netlist
 - It has Connectivity Information, it also provide input to the simulation, it also having tap points at which we can take the output
@@ -607,7 +608,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="505" height="390" alt="image" src="https://github.com/user-attachments/assets/91e2aede-9a68-4f5e-80b8-fa3a062ae9d6" />
 
-### L2: SPICE simulation for CMOS inverter
+#### L2: SPICE simulation for CMOS inverter
 
 <img width="560" height="412" alt="image" src="https://github.com/user-attachments/assets/3fd0246b-ba45-4c97-846a-79eb50a6958e" />
 
@@ -616,7 +617,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b4f6b417-cb4a-4afd-927c-3ba315dc3f57" />
 
-### L3 Labs Sky130 SPICE simulation for CMOS
+#### L3 Labs Sky130 SPICE simulation for CMOS
 
 -  Spice Waveform : Wn = 0.36µ, Wp = 0.84µ, Ln,p = 0.15µ device (Wn/Ln = 2.4, Wp/Lp= 5.6)
 - By using Vim command check the file which already existing in the folder.
@@ -646,7 +647,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - For rise delay and Fall delay we have to consider 50% of Vdd
 - Here, 1.8/2 is 0.9 (vdd)
 
-#### For Rise Delay
+##### For Rise Delay
 
 - Zoom out the area out curve (red)- in curve(blue)
 
@@ -658,7 +659,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Rise Delay {Xout - Xin} = (2.482- 2.151)e-9 = 0.331e-9 secs =0.331 ns.
 
-#### For Fall Delay
+##### For Fall Delay
 
 - Zoom out the area out curve (red)- in curve(blue)
 
@@ -670,8 +671,8 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Fall Delay {Xout - Xin} = (4.333 - 4.05)e-9 = 0.2818e-9 =0.2818
 
-## Static behavior evaluation – CMOS inverter robustness – Switching Threshold
-### L1: Switching Threshold, Vm
+### Static behavior evaluation – CMOS inverter robustness – Switching Threshold
+#### L1: Switching Threshold, Vm
 
 - Spice Waveform : Wn = Wp = 0.375µ, Ln,p = 0.25µ device (Wn/Ln = Wp/Lp= 1.5)
 -  Spice Waveform : Wn = 0.375µ, Wp = 0.9375µ, Ln,p = 0.25µ device (Wn/Ln = 1.5, Wp/Lp= 3.75)
@@ -689,7 +690,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="502" height="402" alt="image" src="https://github.com/user-attachments/assets/c6a9a803-b9fe-4f6a-9160-79b837389914" />
 
-### L2: Analytical expression of Vm as a function of (W/L)p and (W/L)n
+#### L2: Analytical expression of Vm as a function of (W/L)p and (W/L)n
 
 - IdsP + IdsN = 0
 
@@ -703,7 +704,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="569" height="400" alt="image" src="https://github.com/user-attachments/assets/93c7496a-5719-44bd-a9ad-d91aa9e4dca3" />
 
-### L3: Analytical expression of (W/L)p and (W/L)n as a function of Vm
+#### L3: Analytical expression of (W/L)p and (W/L)n as a function of Vm
 
 - We derving the conditions, Exactly half of the power supply voltage. To achive that what should be the value of W/L ratio of PMOS and NMOS.
 - Alternatively , the required ratio of PMOS v/s NMOS transistor size can be derived, such that Vm is Set
@@ -722,7 +723,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Here , We getting the value of (W/L) PMOS  = x * (W/L) NMOS
 
-### L4: Static and dynamic simulation of CMOS inverter
+#### L4: Static and dynamic simulation of CMOS inverter
 
 - By using this relation we able to do some SPICE simulations
 
@@ -730,7 +731,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="507" height="400" alt="image" src="https://github.com/user-attachments/assets/117269b5-4d10-48d3-ab1a-2584e326bd7c" />
 
-### L5 Static and dynamic simulation of CMOS inverter with increased PMOS width
+#### L5 Static and dynamic simulation of CMOS inverter with increased PMOS width
 
 - Here the  static and dynamic simulation with Increased PMOS
 
@@ -753,7 +754,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="530" height="309" alt="image" src="https://github.com/user-attachments/assets/fd4097f5-f986-478e-8693-9d62684292f9" />
 
-### L6: Applications of CMOS inverter in clock network and STA
+#### L6: Applications of CMOS inverter in clock network and STA
 
 - There is 50mv change by varing the PMOS and (multiple of  two to three )NMOS parameter
 
@@ -766,7 +767,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="309" height="412" alt="image" src="https://github.com/user-attachments/assets/69fecf44-bf30-4571-ae36-478a3c3cfcb9" />
 
-#### Irregular Inverter / Buffer
+##### Irregular Inverter / Buffer
 
 <img width="416" height="305" alt="image" src="https://github.com/user-attachments/assets/1cd15c56-2519-4bc3-84ed-eb337f4276ec" />
 
@@ -779,10 +780,10 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - One can used as Clock cell and rest of them can used as data path
 
-# NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
-## Static behavior evaluation – CMOS inverter robustness – Noise margin
+## NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
+### Static behavior evaluation – CMOS inverter robustness – Noise margin
 
-### L1: Introduction to noise margin
+#### L1: Introduction to noise margin
 
 - Consider basic Inverter when i/p is 0 then o/p is 1 and vise verse
 
@@ -798,7 +799,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="412" alt="image" src="https://github.com/user-attachments/assets/5b026032-2883-48fa-8f48-1f19136941d8" />
 
-### L2: Noise margin voltage parameters
+#### L2: Noise margin voltage parameters
 
 - Slope is the change in the output voltage /  change in the input voltage
 - Here slope is negative
@@ -807,7 +808,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Acutal one on the left side and ideal one on the right side
 
-### L3: Noise margin equation and summary
+#### L3: Noise margin equation and summary
 - Here Voh > Vih(always)
 - Next stage detect as logic 1
 - Here Vol < Vil
@@ -826,7 +827,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - Second case, Bump height lies between Vil and Vih . o/p logic "undefine".(unsafe glitch)
 - Third case, Bump height lies between Vih and Voh . Will be considered as Logic'1' (safe glitch)
 
-### L4: Noise margin variation with respect to PMOS width
+#### L4: Noise margin variation with respect to PMOS width
 
 - By keeping value (x) = 1 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
 - Here Vm = 0.99 V
@@ -862,7 +863,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="410" alt="image" src="https://github.com/user-attachments/assets/a2f16574-fc5a-4b4d-a32a-e7bcb9e6502b" />
 
-### L5: Sky130 Noise margin labs
+#### L5: Sky130 Noise margin labs
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/dcb1ccef-18bc-48a4-b9b8-fb72bd6d0f35" />
 
@@ -881,9 +882,9 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
  - High Noise Margin(HNM) = Voh - Vih = 1.722 - 0.975 = 0.747
  - Low Noise Margin(LNM) = Vil- Vol = 0.758 - 0.113 = 0.645
 
-# NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
-## Static behavior evaluation – CMOS inverter robustness – Power supply variation
-### L1: Smart SPICE simulation for power supply variations
+## NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
+### Static behavior evaluation – CMOS inverter robustness – Power supply variation
+#### L1: Smart SPICE simulation for power supply variations
 
 - We are analysing static behavior EValuation :CMS inverter Robudstness
 - By keeping (W/L) ratio of PMOS to NMOS cosntant and sweeping the Vdd from 2.5 V to 1 V
@@ -896,7 +897,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - CMOS inverter applied under various supply voltages
 
-### L2: Advantages and disadvantages using low supply voltage
+#### L2: Advantages and disadvantages using low supply voltage
 
 - Gain factor is the ratio of output voltage change to the input voltage
 
@@ -916,7 +917,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="422" height="307" alt="image" src="https://github.com/user-attachments/assets/bff3c728-8318-4357-a02c-75e84fef42d5" />
 
-### L3: Sky130 Supply Variation Labs
+#### L3: Sky130 Supply Variation Labs
 
 <img width="501" height="406" alt="image" src="https://github.com/user-attachments/assets/5341eeca-421b-46ee-8595-1c289e5e871a" />
 
@@ -933,7 +934,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 -  Here the Curves of VTC plotted and ranging from 1.8 V to 0.8 V
 -  Gain factor is the ratio of output voltage change to the input voltage change.
 
-#### Gain for Curves
+##### Gain for Curves
 
 -  For VTC 1.8V  curve
   
@@ -966,10 +967,10 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
   
 - Here gain keep decreasing while operating 1V VTC curve to beyond 0.8V VTC curve (i.e is because to supply Voltage is not enough to drive the PFET and NFET transistors
 
-## Static behavior evaluation – CMOS inverter robustness – Device variation
-### L1: Sources of variation – Etching process
+### Static behavior evaluation – CMOS inverter robustness – Device variation
+#### L1: Sources of variation – Etching process
 
-#### Single Inverter
+##### Single Inverter
 -  Layout view
 - Mental lines
 - Blue - metal layer ,
@@ -982,7 +983,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/ab2ad38c-342b-4225-b594-333d1d87d188" />
 
-#### Inverter Chain
+##### Inverter Chain
 
 - Ideal Mask (Area = W * L) and Actual Mask (Area = W′ × L′)
 
@@ -996,13 +997,13 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="507" height="401" alt="image" src="https://github.com/user-attachments/assets/ad3195a8-324c-4e7b-975f-06413023b907" />
 
-### L2: Sources of variation – oxide thickness
+#### L2: Sources of variation – oxide thickness
 
 - Now we are looking cross sectional view of the transistor
 
 <img width="502" height="403" alt="image" src="https://github.com/user-attachments/assets/37de8281-377c-4749-84e4-806ee38f2d06" />
 
-#### Ideal vs Actual Oxidation Process
+##### Ideal vs Actual Oxidation Process
 
 - Due to FAB involved with many chemical process. the Oxidation thickness changes from ideal case
 - Throughout the channel there will oxide thickness change
@@ -1016,13 +1017,13 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="401" height="300" alt="image" src="https://github.com/user-attachments/assets/3150a531-3403-4f7b-ae8e-4ba8b89af810" />
 
-### L3: Smart SPICE simulation for device variations
+#### L3: Smart SPICE simulation for device variations
 
-#### Strong PMOS (Wp = 1.875µ) and Weak NMOS (Wn = 0.375µ)
+##### Strong PMOS (Wp = 1.875µ) and Weak NMOS (Wn = 0.375µ)
 
 - Increase the Size of the PMOS then the resistance going to reduce as the result of that it is called Strong PMOS and contravary for the NMOS 
 
-#### Weak PMOS (Wp = 0.375µ) and Strong NMOS (Wn = 1.875µ)
+##### Weak PMOS (Wp = 0.375µ) and Strong NMOS (Wn = 1.875µ)
 - If the Voltage is given then NMOS is active
 - Here we able to Sweep the Width 
 
@@ -1032,7 +1033,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b13603f9-f6c6-44c1-a5b7-aba27950a618" />
 
-### L4: Conclusion
+#### L4: Conclusion
 - By drawing a line and making an angle 45 degress with X axis
  
 - We are getting Vm shift (0.7 V to 1.4 V)
@@ -1046,7 +1047,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - Operation Of Gate is Intact
 - In Dynamic waveform varies with respective time.
 
-### L5: Sky130 Device Variation Labs
+#### L5: Sky130 Device Variation Labs
 
 <img width="501" height="404" alt="image" src="https://github.com/user-attachments/assets/cb636dd7-8052-488f-9df2-2b90ebf34ea9" />
 
