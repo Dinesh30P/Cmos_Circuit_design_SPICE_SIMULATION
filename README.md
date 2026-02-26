@@ -807,6 +807,65 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Acutal one on the left side and ideal one on the right side
 
+### L3: Noise margin equation and summary
+- Here Voh > Vih(always)
+- Next stage detect as logic 1
+- Here Vol < Vil
+- Next stage detect as logic 0
+
+<img width="505" height="400" alt="image" src="https://github.com/user-attachments/assets/02403974-36f6-441b-aa65-e9ed2a32ac98" />
+
+- High Noise Margin(HNM) = Voh - Vih (high)
+- Low Noise Margin(LNM) = Vil- Vol (low)
+
+- Noise induced bump chracterstics at different noise margin levels
+
+<img width="506" height="360" alt="image" src="https://github.com/user-attachments/assets/ef9f94ad-66e8-425e-a6b3-4106e4403fd8" />
+
+- First case, Bump height lies between Vol and Vil will be considered as Logic '0'. (safe glitch)
+- Second case, Bump height lies between Vil and Vih . o/p logic "undefine".(unsafe glitch)
+- Third case, Bump height lies between Vih and Voh . Will be considered as Logic'1' (safe glitch)
+
+### L4: Noise margin variation with respect to PMOS width
+
+- By keeping value (x) = 1 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
+- Here Vm = 0.99 V
+
+<img width="500" height="407" alt="image" src="https://github.com/user-attachments/assets/415116a8-bb35-4479-9ab9-ec371b8104f4" />
+
+- By keeping value (x) = 2 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
+- Here Vm = 1.2 V
+
+<img width="502" height="401" alt="image" src="https://github.com/user-attachments/assets/1d170764-8f8c-4cff-86c5-71e8a24e3df3" />
+
+- By keeping value (x) = 3 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
+- Here Vm = 1.25 V
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/68b32742-c4f4-4558-a6de-508f2ed08bfd" />
+
+- By keeping value (x) = 4 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
+- Here Vm = 1.35 V
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/16531dba-ef22-4ec6-9efb-5a893defa86f" />
+
+- By keeping value (x) = 5 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
+- Here Vm = 1.4 V
+
+<img width="518" height="409" alt="image" src="https://github.com/user-attachments/assets/3434eb07-6e83-4b7d-8243-0400f801cb1d" />
+
+- Here the table is plotted based on the obtain values of NMH and NML
+
+<img width="502" height="400" alt="image" src="https://github.com/user-attachments/assets/e9c6c56e-8e4a-4804-8314-1b03bb66ff79" />
+
+- From the above Values we can conclude that logic 0 and logic 1 area are favoarable in the digital design
+- Undefined region favorable for the analog design
+
+<img width="500" height="410" alt="image" src="https://github.com/user-attachments/assets/a2f16574-fc5a-4b4d-a32a-e7bcb9e6502b" />
+
+### L5: Sky130 Noise margin labs
+
+
+
 
 
 
