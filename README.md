@@ -880,7 +880,103 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
  - High Noise Margin(HNM) = Voh - Vih = 1.722 - 0.975 = 0.747
  - Low Noise Margin(LNM) = Vil- Vol = 0.758 - 0.113 = 0.645
-   
+
+# NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
+## Static behavior evaluation – CMOS inverter robustness – Power supply variation
+### L1: Smart SPICE simulation for power supply variations
+
+- We are analysing static behavior EValuation :CMS inverter Robudstness
+- By keeping (W/L) ratio of PMOS to NMOS cosntant and sweeping the Vdd from 2.5 V to 1 V
+
+<img width="516" height="400" alt="image" src="https://github.com/user-attachments/assets/5fec8a4d-dc7c-4f5a-98bc-228368dcfada" />
+
+- Anything that comes between .control and .endc we can able to do scripting (variables , loops...)
+
+<img width="509" height="408" alt="image" src="https://github.com/user-attachments/assets/6c09c563-4e01-459c-9915-b0e0c0d3a3e7" />
+
+- CMOS inverter applied under various supply voltages
+
+### L2: Advantages and disadvantages using low supply voltage
+
+- Gain factor is the ratio of output voltage change to the input voltage
+
+<img width="503" height="402" alt="image" src="https://github.com/user-attachments/assets/0bea1546-9e36-40a8-8abb-a3240054e5d0" />
+
+- Energy = 1/2 CV**2
+- By Operating at 2.5 V the then energy  will be 3.125*C
+- By Operating at 0.5 V the then energy  will be 0.125*C
+- The gain in the energy is 96% (reduction of energy by using 0.5 V from 2.5 V)
+
+- The rise delay is 66 ps and the fall delay  is 78 ps (while CMOS inverter is  operating at 2.5 V)
+- while CMOS inverter is operating at 0.5 V. this supply is not enough
+- The device is not able to charge(rise time is not sufficient) andn completely discharge
+- Device which is operating at 0.5 V need to perform the same operation like 2.5 V. Need extra rise time
+
+- The rise delay is 220 ps and the fall delay  is 265 ps (while CMOS inverter is  operating at 0.5 V)
+
+<img width="422" height="307" alt="image" src="https://github.com/user-attachments/assets/bff3c728-8318-4357-a02c-75e84fef42d5" />
+
+### L3: Sky130 Supply Variation Labs
+
+<img width="501" height="406" alt="image" src="https://github.com/user-attachments/assets/5341eeca-421b-46ee-8595-1c289e5e871a" />
+
+<img width="502" height="405" alt="image" src="https://github.com/user-attachments/assets/d62eab0b-7131-4d6a-942d-5d46d3870c19" />
+
+- By following the  instructions
+
+<img width="527" height="407" alt="image" src="https://github.com/user-attachments/assets/4cd3f83f-e735-4fe8-ad06-96a2280e0697" />
+
+- Here the Plot for Differnet Vdd and same W/L PMOS to NMOS
+
+<img width="606" height="458" alt="image" src="https://github.com/user-attachments/assets/4b128b06-6d94-49f4-bf4d-5661abd0ce31" />
+
+-  Here the Curves of VTC plotted and ranging from 1.8 V to 0.8 V
+-  Gain factor is the ratio of output voltage change to the input voltage change.
+
+#### Gain for Curves
+
+-  For VTC 1.8V  curve
+  
+<img width="401" height="306" alt="image" src="https://github.com/user-attachments/assets/aab6ce07-4ba4-4ac4-ad4d-cd5cc362841a" />
+
+- First seperate Y-Values = 1.718 - 0.129 = 1.589
+- First seperate X-Values = 0.965 - 0.760 = 0.205
+
+- The ratio of change in Y- Values to Change in X- Values is known as **Gain = 7.751**
+
+-  For VTC 1V curve
+
+<img width="396" height="303" alt="image" src="https://github.com/user-attachments/assets/5d0404e4-2119-46e1-80c9-9f7abad6d473" />
+
+- First seperate Y-Values = 0.963 - 0.036 = 0.927
+- First seperate X-Values = 0.577 - 0.488 = 0.089
+
+- The ratio of change in Y- Values to Change in X- Values is known as **Gain = 10.921**
+
+-  For VTC 0.8V curve
+
+<img width="404" height="301" alt="image" src="https://github.com/user-attachments/assets/3022d946-f9a5-4d46-80ac-dc1e6d6306fa" />
+
+- First seperate Y-Values = 0.774 - 0.025 = 0.749 
+- First seperate X-Values = 0.509 - 0.417 = 1.22
+
+- The ratio of change in Y- Values to Change in X- Values is known as **Gain = 0.613**
+
+- Here gain keep increasing while operating  1.8V VTC curve decreasing until 1V VTC curve(i .e inversly propotinal )
+  
+- Here gain keep decreasing while operating 1V VTC curve to beyond 0.8V VTC curve (i.e is because to supply Voltage is not enough to drive the PFET and NFET transistors
+
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
