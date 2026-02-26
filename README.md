@@ -966,7 +966,112 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
   
 - Here gain keep decreasing while operating 1V VTC curve to beyond 0.8V VTC curve (i.e is because to supply Voltage is not enough to drive the PFET and NFET transistors
 
-  
+## Static behavior evaluation – CMOS inverter robustness – Device variation
+### L1: Sources of variation – Etching process
+
+#### Single Inverter
+-  Layout view
+- Mental lines
+- Blue - metal layer ,
+- Green - P diffusion
+- Yellow - N diffusion
+- Red- polysilicon
+- Black cross is the contact
+- L is the Gate lenght at which node/technology you are(20nm,25nm.....)
+- W is the Width . it identify overlap area of P diffusion
+
+<img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/ab2ad38c-342b-4225-b594-333d1d87d188" />
+
+#### Inverter Chain
+
+- Ideal Mask (Area = W * L) and Actual Mask (Area = W′ × L′)
+
+<img width="509" height="400" alt="image" src="https://github.com/user-attachments/assets/6ceb1df8-889a-4f7f-9e87-79ea13947647" />
+
+- Due to diffrent processes involved in the FAB
+
+<img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/e8a4566c-21b3-4855-97bd-76ed12402825" />
+
+- Drain current is Directly related to the (W/L) it will causes impact of the Delay
+
+<img width="507" height="401" alt="image" src="https://github.com/user-attachments/assets/ad3195a8-324c-4e7b-975f-06413023b907" />
+
+### L2: Sources of variation – oxide thickness
+
+- Now we are looking cross sectional view of the transistor
+
+<img width="502" height="403" alt="image" src="https://github.com/user-attachments/assets/37de8281-377c-4749-84e4-806ee38f2d06" />
+
+#### Ideal vs Actual Oxidation Process
+
+- Due to FAB involved with many chemical process. the Oxidation thickness changes from ideal case
+- Throughout the channel there will oxide thickness change
+
+
+<img width="500" height="405" alt="image" src="https://github.com/user-attachments/assets/5ffc39e9-970a-4d35-80d1-1a8d9da72b9b" />
+
+- Oxide thickness (Cox) = εox / tox
+
+- More Oxide thickness variation more Id current variation (directly proportional)
+
+<img width="401" height="300" alt="image" src="https://github.com/user-attachments/assets/3150a531-3403-4f7b-ae8e-4ba8b89af810" />
+
+### L3: Smart SPICE simulation for device variations
+
+#### Strong PMOS (Wp = 1.875µ) and Weak NMOS (Wn = 0.375µ)
+
+- Increase the Size of the PMOS then the resistance going to reduce as the result of that it is called Strong PMOS and contravary for the NMOS 
+
+#### Weak PMOS (Wp = 0.375µ) and Strong NMOS (Wn = 1.875µ)
+- If the Voltage is given then NMOS is active
+- Here we able to Sweep the Width 
+
+<img width="501" height="405" alt="image" src="https://github.com/user-attachments/assets/d75ba126-3934-40ac-99f6-c205bbf44925" />
+
+- here is the  CMOS inverter Robustness
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b13603f9-f6c6-44c1-a5b7-aba27950a618" />
+
+### L4: Conclusion
+- By drawing a line and making an angle 45 degress with X axis
+ 
+- We are getting Vm shift (0.7 V to 1.4 V)
+
+<img width="500" height="407" alt="image" src="https://github.com/user-attachments/assets/420b2c51-2521-4c3f-b2b8-73e49f0062f7" />
+
+- Varitions in the noise margin  (NMH - 2.1 V to 2.4 V) and (NML - 0.19V to 0.28V)
+
+<img width="504" height="406" alt="image" src="https://github.com/user-attachments/assets/60dce810-f4e5-41dd-bd15-49edab560899" />
+
+- Operation Of Gate is Intact
+- In Dynamic waveform varies with respective time.
+
+### L5: Sky130 Device Variation Labs
+
+<img width="501" height="404" alt="image" src="https://github.com/user-attachments/assets/cb636dd7-8052-488f-9df2-2b90ebf34ea9" />
+
+- Here, huge holding on Vdd  for longer duration compare to the NFET ,  
+- IN this VTC curve Output holds the curve for long duration compared to the ground
+- i.e  we tends to increase the width of the PFET is very high
+- Drive strength of the PFET increase
+
+<img width="600" height="457" alt="image" src="https://github.com/user-attachments/assets/2f97cdfc-3b98-4148-8a57-aa3f92261142" />
+
+- At Vdd / 2 Switching Happens in ideal case
+- CMOS is Robusted
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/5e84f50a-bd3d-4448-a457-1716efc6ebde" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
