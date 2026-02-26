@@ -864,6 +864,27 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 ### L5: Sky130 Noise margin labs
 
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/dcb1ccef-18bc-48a4-b9b8-fb72bd6d0f35" />
+
+<img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/2e7ff912-9278-4a9e-9507-6dc39e7715be" />
+
+<img width="508" height="407" alt="image" src="https://github.com/user-attachments/assets/7e6dd41c-2aee-45a7-9a83-cdbdcba042c5" />
+
+- Here X value is ViL and Y value is VoH (slope at the top bend)
+
+  - ViL = 0.758 and VoH = 1.722
+
+- Here X Value is ViH and Y value is VoL(slope at the bottom bend)
+
+ - ViH = 0.975 and VoL = 0.113
+
+ - High Noise Margin(HNM) = Voh - Vih = 1.722 - 0.975 = 0.747
+ - Low Noise Margin(LNM) = Vil- Vol = 0.758 - 0.113 = 0.645
+   
+
+
+
+
 
 
 
