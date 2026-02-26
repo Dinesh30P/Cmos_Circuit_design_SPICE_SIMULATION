@@ -2,7 +2,7 @@
 
 ## Introduction to Circuit Design and SPICE simulations 
 
-### CMOS_Circuit_design_&_SPICE_SIMULATION
+## CMOS_Circuit_design_&_SPICE_SIMULATION
  
 ### L1: Why is SPICE Simulation needed?
 - To verify circuit behavior before fabrication.
@@ -12,16 +12,16 @@
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/d0cd4084-6e16-4550-97e7-6f5c899e44ce" />
 
 
-###### What is circuit design and SPICE?
+##### What is circuit design and SPICE?
 - circuit design consists of logic gates AND,OR,NOT,Buffer...made up of PMOS and NMOS transistors connected in particular fasion.
 - SPICE is a Simulation Program with Integrated Circuit Emphasis, which genereats the waveform defines the delay of the pariticlar cell based on the waveform shape.
 
-###### Why do we need SPICE?
+##### Why do we need SPICE?
 - The clocktree synthesis, timing, crosstalks are build on the SPICE, without having SPICE there won't be delays and if there is no delays physical design flow, crosstalk won't make any sense.
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ea9a8b75-a1f8-4b46-9179-3cd58b61fc3f" />
 
-###### Clocktree sysnthesis
+##### Clocktree sysnthesis
 - delay table consists of  i/p slew and o/p load for buffer types (level 1, level 2)
 - intersection value consider as the delay
 - if the delay table not provide any value then we have to do interpolation between two values through equations
@@ -31,7 +31,7 @@
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/caded01a-8ef3-44c6-adc9-2f13e7e38b9a" />
 
-#### L2: Introduction to basic element in Circuit design – NMOS
+### L2: Introduction to basic element in Circuit design – NMOS
 
 A transistor is a semiconductor device that can control the current flow through an electric field and functions mainly as an amplifier or a switch. The MOS transistor is the core device mostly used in CMOS circuits. A MOS transistor can be either n-type (NMOS) or p-type (PMOS) depending on the doping and dominant charge carriers.
 
@@ -45,10 +45,10 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/ee5ea8b2-ae84-4e63-8b09-3ab224b7b79d" />
 
-##### Threshold Voltage:
+#### Threshold Voltage:
 - Threhold Voltage (Vt) is the gate voltage,when grounded all termimals, starting from zero, and gradully increasing postively, until it reaches minimum volatage required to form a conductive channel between the source and drain to turn on the NMOS.
 - It is a function of x,y,z. which can accurately describes the NMOS Transistor. Here we called as Models.
-##### Modeling of Threshold Volatage
+#### Modeling of Threshold Volatage
 
 - Let, consider Vgs=0
 - Source, Connect Drain, and Body to GND
@@ -62,7 +62,7 @@ A transistor is a semiconductor device that can control the current flow through
    
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/814aeeb1-24a2-4507-81fb-25d131c3f4ae" />
 
-#### L3: Strong inversion and threshold voltage
+### L3: Strong inversion and threshold voltage
 
 - We can also state that the threshold voltage as the Vgs voltage at which 'strong inversion' occurs  is called Threshold Voltage(Vt).
 - Further increase in the Gate potential, there is no change in the Depletion layer width, but the channel width is increases by attracting the electrons from the  heavily doped 'n+' source region.
@@ -82,7 +82,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/1c6dd5ab-c502-4f76-9a7b-4f70096b723a" />
 
-#### L4: Threshold voltage with positive substrate potential
+### L4: Threshold voltage with positive substrate potential
 
 - On the left side(Vbs = 0), there is the surface inversion takes places. 
 - Semiconductor surface inverts to n-type material at voltage Vgs = Vto
@@ -100,11 +100,11 @@ A transistor is a semiconductor device that can control the current flow through
 
 - These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.
 
-### NMOS resistive region and saturation region of operation
+## NMOS resistive region and saturation region of operation
 
-#### L1: Resistive region of operation with small drain-source voltage
+### L1: Resistive region of operation with small drain-source voltage
 
-##### Resistive Operation
+#### Resistive Operation
 - Vgs is increases then channel width is increases, becauses of the induced charges casued by the gate voltage
 
 <img width="500" height="409" alt="image" src="https://github.com/user-attachments/assets/e0472695-f013-4799-a17d-214e7a7f9368" />
@@ -121,7 +121,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 - Gate to channel Voltage at that point on the application of Vds is Vgs-V(x)
 
-#### L2: Drift current theory
+### L2: Drift current theory
 - Now, in the channel, induced at any point
 - Qi(x) ∝ ([Vgs-V(x)]-Vt)
 - i.e Qi(x) = -Cox([Vgs-V(x)]-Vt)
@@ -137,7 +137,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/8fc1d9ef-6b84-47ea-9654-cf3de1290af4" />
 
-#### L3: Drain current model for linear region of operation
+### L3: Drain current model for linear region of operation
 
 - velocity is Vn(x), W is width, mobility of the carriers and electric field
 
@@ -149,13 +149,13 @@ A transistor is a semiconductor device that can control the current flow through
 
 - when ever (Vds <= Vgs-Vt) MOSFET operates in the linear region.
 
-##### Current Equation for Linear Region 
+#### Current Equation for Linear Region 
 
 Id = (Kn)*{(Vgs-Vt)Vds - Vds**2 / 2} 
   
 <img width="503" height="406" alt="image" src="https://github.com/user-attachments/assets/b955d07a-bbea-4164-a6ef-946645add5c3" />
 
-#### L4: SPICE conclusion to resistive operation
+### L4: SPICE conclusion to resistive operation
 
 - For linear region operation we have to make sure that  (Vds <= Vgs-Vt) so we neglection the 
 Vds^2 / 2 term in the current equation.
@@ -165,7 +165,7 @@ Vds^2 / 2 term in the current equation.
 - here we have sweep the values of Vds ranging for 0 to 2.05 but maintaining the condition         Vds <= Vgs-Vt to be in the linear region or restitve region of operation.
 - if Vds >= Vgs-Vt then device enters into the saturation region
 
-#### L5 Pinch-off region condition
+### L5 Pinch-off region condition
 
 - if Vds >= Vgs-Vt then device enters into the saturation region
 - Vgs- V(x) is the gate to channel volatage at that point
@@ -189,19 +189,19 @@ Vds^2 / 2 term in the current equation.
 | 1   | 0.95 | 0.05      | < | 0.45 |
 
 - At Vgs > Vt (surface inversion already happens)
-## Pinch of Phenomenon Started
+#### Pinch of Phenomenon Started
 - i.e channel begins to disappear(linearity of the current flow changes)
 - At this point Vt = Vgs-Vds(surface iversion just happens / about to happen )
 
 <img width="504" height="402" alt="image" src="https://github.com/user-attachments/assets/d197b2b5-2be4-44da-958c-e235c6dcfd13" />
 
- ## Pinch off Region
+#### Pinch off Region
 
 -  here Vgs-Vds < Vt(no channel present near to the drain)
  
 -  <img width="500" height="444" alt="image" src="https://github.com/user-attachments/assets/685c7cf4-2b31-4383-87a7-d2d95e2d91cd" />
 
-#### L6: Drain current model for saturation region of operation
+### L6: Drain current model for saturation region of operation
 
 - Voltage over the channel remains constant  = Vgs-Vt (Vds is negligible/ vanished)
 - In the current Equation Vds in the channel voltage{Vgs- Vds} is Replace by (Vgs-Vt)
@@ -217,25 +217,25 @@ Vds^2 / 2 term in the current equation.
 
 <img width="500" height="304" alt="image" src="https://github.com/user-attachments/assets/e0a9cd88-07fe-4b8b-8e6d-82ee22999f5a" />
 
-##### Constant Current Equation for Saturation Region 
+#### Constant Current Equation for Saturation Region 
 
 - Id = (Kn'/2)(W/L)(1+ λ*Vds)(Vgs-Vt)**2
 
-### Introduction to SPICE
+## Introduction to SPICE
 
-#### L1 Basic SPICE setup
+### L1 Basic SPICE setup
 
 - It is basically a software and its an engine which can derives some waveform by giving inputs
 - This waveforms are used to calculate the delay of the cell
 - This delays are accurate and used to Static Timing Analysis(STA)
 
-##### SPICE Model Parameters 
+#### SPICE Model Parameters 
 
 - The highlighted ones are the constants will come from the foundaries when we tackle advance technology nodes
 
 <img width="512" height="321" alt="image" src="https://github.com/user-attachments/assets/eb44d327-72f0-4f90-8070-435ce1113d0e" />
 
-##### SPICE setup Flow chart
+#### SPICE setup Flow chart
 
 <img width="506" height="401" alt="image" src="https://github.com/user-attachments/assets/b60bbe86-2c9a-4c0b-9ed6-22a0167b0837" />
 
@@ -245,7 +245,7 @@ Vds^2 / 2 term in the current equation.
 
 <img width="503" height="396" alt="image" src="https://github.com/user-attachments/assets/088e3d30-d3eb-455e-9a0b-fa1683dce2c4" />
 
-#### L2: Circuit description in SPICE syntax
+### L2: Circuit description in SPICE syntax
 
 - let's give the values for the netlist
 - Here, We can considering 4 nodes (where there is no obstraction we can consider as node)
@@ -255,19 +255,19 @@ Vds^2 / 2 term in the current equation.
 - In an electrical circuit, a node is a point where two or more components are connected together. It represents a location where the electrical potential (voltage) is the same for all connected elements.
 - Nodes are used in circuit analysis to determine voltages and currents throughout the system.
 
-##### DGSS
+#### DGSS
   
 <img width="506" height="409" alt="image" src="https://github.com/user-attachments/assets/7da08862-1bc6-4461-a3c7-9d434fcc8125" />
 
 - MOSFET have 4 terminals i.e Drain, Gate, Source, Substrate/Bulk
 - 
-##### For the First Component (MOSFET)
+#### For the First Component (MOSFET)
 - M1 --> MOSFETXX (XX- number), Vdd --> Drain, 0 --> Source node, 0 --> Substrate node, NMOS --> it comes from technology file, W= 1.8µ --> Width of the Gate in microns, L = 1.2µ --> length of the Gate in Micron.
 
-##### For the Second Componet (Resistor)
+#### For the Second Componet (Resistor)
 - R1 --> ResistorXX (XX- number), in --> First terminal, n1 --> Node 1 {R1 is between in and n1}, 55 Ω --> Resistance  Value in Ohms
 
-##### Vdd Source 
+#### Vdd Source 
 
 - VXX --> Voltage source XX(it will between 2 nodes i.e Vdd and Zero), here  Vdd is 2.5 Volts.
 - Vin lies in between in(postive terminal)and Zero (negative terminal), here  Vin is 2.5 Volts.
@@ -276,13 +276,13 @@ Vds^2 / 2 term in the current equation.
 <img width="420" height="200" alt="image" src="https://github.com/user-attachments/assets/4bd4c5c2-375c-48c6-8573-4312ff961239" />
 
 
-#### L3: Define Technology Parameters
+### L3: Define Technology Parameters
  
-##### Models
+#### Models
  - AND gate is a BOOLEAN Multiplication of two inputs
  - OR gate is a BOOLEAN Addition of two inputs
 
-##### For Model Files(Vt,Id...) --> Model Parameters(γ, kn'/2...) are Required
+#### For Model Files(Vt,Id...) --> Model Parameters(γ, kn'/2...) are Required
 
 <img width="539" height="404" alt="image" src="https://github.com/user-attachments/assets/163ce3ae-2771-45a8-bcf2-1ffe17f7e2b2" />
 
@@ -290,16 +290,16 @@ Vds^2 / 2 term in the current equation.
 
 <img width="501" height="403" alt="image" src="https://github.com/user-attachments/assets/8cacb959-fbbd-408b-8e41-cfbc1df79ad0" />
 
-##### Package in a file (.mod )
+#### Package in a file (.mod )
 
-##### .LIB "xxxx_025µm_model.mod" CMOS_MODELS
+#### .LIB "xxxx_025µm_model.mod" CMOS_MODELS
 
-##### Simulation commands
+#### Simulation commands
 - We have to Sweep Drain and Gate Voltage
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/4f64cabc-50ae-41a2-b857-92f23dda6bfc" />
 
-#### L4: First SPICE simulation
+### L4: First SPICE simulation
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/5c808992-7f65-4902-9f58-f484d7ea67d5" />
 
@@ -322,13 +322,13 @@ Vds^2 / 2 term in the current equation.
 
 ## SPICE simulation for lower nodes and velocity saturation effect
 
-#### L1: SPICE simulation for lower nodes
+### L1: SPICE simulation for lower nodes
 
 - Here we consider beyond the blue line it is linear, after the blue line it is non linear[it is a function of (1+ λ*Vds)}
 
 <img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2289e92f-c19d-4773-a604-bc5f7248f004" />
 
-##### Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
+#### Now Spice Waveform : W= 0.375µ, L= 0.25µ device (W/L = 1.5)
 
 - Here, by keeping W/L ratio constant
 
@@ -343,14 +343,14 @@ Vds^2 / 2 term in the current equation.
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/022953ba-1dfe-4c45-9f68-77b37695d86e" />
 
-#### L2 Drain current vs gate voltage for long and short channel device
+### L2 Drain current vs gate voltage for long and short channel device
 
 - long channel device (> 1.20)
 - short channel device (< 0.25)
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/18685893-1358-4d0d-b0e9-bb5adc057a1e" />
 
-##### In long channel
+#### In long channel
 - At saturation region, the drain current (Id) is a quadratic dependence from Vgs raised from bottom to top
 - Here, at different values of Vgs at one Vds(2.5Volts) is a quadratic dependence
 
@@ -360,7 +360,7 @@ Vds^2 / 2 term in the current equation.
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/81e493ea-4930-4a9b-b012-5cc311e9be13" />
 
 
-#####  In short channel
+####  In short channel
 
 - At saturation region, the drain current (Id) is a switching from Quadratic to Linear dependence by increasing the Vgs.
 - Reason for this is Velocity Saturation in the short channels
@@ -371,7 +371,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/4c6b54a7-7dc2-467d-9a4a-bf4d87937c27" />
 
-#### L3 Velocity saturation at lower and higher electric fields
+### L3 Velocity saturation at lower and higher electric fields
 
 <img width="504" height="300" alt="image" src="https://github.com/user-attachments/assets/ab7bb70f-8264-413a-b991-7c64fd38a5f7" />
 
@@ -388,7 +388,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
   
 <img width="504" height="308" alt="image" src="https://github.com/user-attachments/assets/2a41b2c0-16d5-449c-b49c-eafa3c1b92ef" />
 
-##### Velocity Saturation Effect with differnt Operational Modes
+#### Velocity Saturation Effect with differnt Operational Modes
 
 - One mode of Long channel (>250nm) and another one for short channel (<250nm)
 - For short channel we have velocity saturation region  more compared long channel
@@ -401,13 +401,13 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="507" height="314" alt="image" src="https://github.com/user-attachments/assets/2c9da1e3-b861-4e99-abb8-e1f92be547bd" />
 
-#### L4: Velocity saturation drain current model
+### L4: Velocity saturation drain current model
 
 - Vdsat ----> it is called as technology parameter
 - it is a saturation voltage i.e voltage at which device velocity saturates and is independent of Vgs or Vds.
 -  it is a constant value
 
-##### When Vgt is the Minimum Value
+#### When Vgt is the Minimum Value
 
 - It comes under saturation region operation. it is true for the both the channel nodes
 
@@ -419,26 +419,26 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="393" alt="image" src="https://github.com/user-attachments/assets/39f2e4c6-d279-46c9-84b0-ae5fe4bbde37" />
 
-##### When Vsat is the Minimum Value
+#### When Vsat is the Minimum Value
 
 - here it is **ONLY** applicable for **short channel devices**
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/56928d36-2a9f-4550-b30d-634e4f10b8c9" />
 
-##### Observation 2
+#### Observation 2
 
 - When we move from Higher Device to Lower Device, important term to note that Velocity Saturation causes device to saturate early.
 - For the same ( W/L ratio) we can observe different Peak currents
 
 <img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/0e5dc61f-06a9-48e3-ab18-33033076c750" />
 
-#### L5: Labs Sky130 Id-Vgs
+### L5: Labs Sky130 Id-Vgs
 
 - for running W = 0.39 and L = 0.15 (short channel)
 
 <img width="531" height="400" alt="image" src="https://github.com/user-attachments/assets/1a09ffdb-57bf-4936-b14c-a109e2b629ca" />
 
-##### here, is  the plot for  **IdVds**
+#### here, is  the plot for  **IdVds**
 
 <img width="506" height="400" alt="image" src="https://github.com/user-attachments/assets/991a7a4f-9074-4c52-ac43-c85f3e704b6a" />
 
@@ -446,7 +446,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="409" height="304" alt="image" src="https://github.com/user-attachments/assets/d7e2d15b-9126-492c-924e-6ed56b8844df" />
 
-##### here, is  the plot for  **IdVgs**
+#### here, is  the plot for  **IdVgs**
 
 - for running W = 0.39 and L = 0.15 (short channel)
 
@@ -454,7 +454,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="506" height="413" alt="image" src="https://github.com/user-attachments/assets/b2bbaae7-b243-460f-9d0b-2f16bf611fe9" />
 
-#### L6: Labs Sky130 Vt
+### L6: Labs Sky130 Vt
 
 - Lets find out theresold voltage for IdVgs curve
 - To get the theresold voltage , we have to draw a tangent to the curve and mark the point where tangent is intersecting the X-axis
@@ -465,9 +465,9 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - The point of intersection of X-axis around 0.77 volts(vds).
 
-### CMOS voltage transfer characteristics (VTC)
+## CMOS voltage transfer characteristics (VTC)
 
-#### L1: MOSFET as a switch
+### L1: MOSFET as a switch
 
 - When ever the Vgs > Vt then only device get turn on.
 - ∣Vgs∣>∣Vt​∣ then only Switch gets closed and device can do its work.
@@ -489,14 +489,14 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="403" alt="image" src="https://github.com/user-attachments/assets/66f2a542-383b-4e0c-8ede-c5868f137e02" />
 
-#### L2: Introduction to standard MOS voltage current parameters
+### L2: Introduction to standard MOS voltage current parameters
 
 - To turn on PMOS -Vgs is less than -Vt
 - Vin is Low and equal to "0 V"
 
 <img width="500" height="402" alt="image" src="https://github.com/user-attachments/assets/c430e8f6-94f0-454c-8a26-3bc99faddf50" />
 
-##### We are watching the voltage conditions
+#### We are watching the voltage conditions
 
 - It is very important to know the direction of current
 - all the CL got discharge then Vout is zero, due direct path exist between Vout and Vss
@@ -509,7 +509,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 <img width="501" height="402" alt="image" src="https://github.com/user-attachments/assets/25651aa5-a1ef-4fe9-8ac4-ce99e51f9087" />
 
 
-#### L3 PMOS/NMOS drain current v/s drain voltage
+### L3 PMOS/NMOS drain current v/s drain voltage
 
 ##### By Observation
 
@@ -520,21 +520,22 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - VgsP =  **Vin - Vdd** (carefully rememeber not only Vin and also less than thersold voltage to get turn on)
 - VdsP =  **Vout - Vdd**
 - IdsP = (-) IdsN
-##### Derving the load current
+
+#### Derving the load current
 
 - NMOS IdsN vs VdsN Curve
 - PMOS IdsP vs VdsP Curve (is Inversion of the NMOS)
   
 <img width="502" height="309" alt="image" src="https://github.com/user-attachments/assets/d0cf7e41-1dfa-44ae-83ec-0d96536f10bd" />
 
-#### L4: Step1 – Convert PMOS gate-source-voltage to Vin
+### L4: Step1 – Convert PMOS gate-source-voltage to Vin
 
 - When ever input Voltage goes from 0 to 1.
 - The output voltage will goes from logic 1 to logic 0 on the application of 0 to 1.
 - All of them are in the function of Vin and Vout only.
 - The internal node voltages are not even visible to a user, because those are not use in any kind of digital device
 
-  ##### Voltage tranfer characterstics
+#### Voltage tranfer characterstics
 
 <img width="500" height="404" alt="image" src="https://github.com/user-attachments/assets/447c669a-e5f0-40e2-9e61-77e2d4834563" />
 
@@ -546,7 +547,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - Converting all Vgsp into Vin
 
 
-#### L5 Step2 & Step3 – Convert PMOS and NMOS drain-source-voltage to vout
+### L5 Step2 & Step3: – Convert PMOS and NMOS drain-source-voltage to vout
 
 - Mirror Image with respective X-axis(IdsP = -IdsN)
 - we have to convert the whole curve into Vout
@@ -562,7 +563,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="304" alt="image" src="https://github.com/user-attachments/assets/aebfe707-27b4-445c-8a4c-a31a346a549f" />
 
-##### Load Curve for NMOS transistor using the above equations
+#### Load Curve for NMOS transistor using the above equations
 
 - just changing the Nable by using this equations and plot the values as same Id vs VdsN
 - VgsN = Vin - Vss = Vin
@@ -591,9 +592,9 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 # NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
 ## Voltage transfer characteristics – SPICE simulations
 
-#### L1: SPICE deck creation for CMOS inverter
+### L1: SPICE deck creation for CMOS inverter
 
-#####  VTC Spice Simulations
+####  VTC Spice Simulations
 
 - Spice deck is a connectivity information about the netlist
 - It has Connectivity Information, it also provide input to the simulation, it also having tap points at which we can take the output
@@ -608,7 +609,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="505" height="390" alt="image" src="https://github.com/user-attachments/assets/91e2aede-9a68-4f5e-80b8-fa3a062ae9d6" />
 
-#### L2: SPICE simulation for CMOS inverter
+### L2: SPICE simulation for CMOS inverter
 
 <img width="560" height="412" alt="image" src="https://github.com/user-attachments/assets/3fd0246b-ba45-4c97-846a-79eb50a6958e" />
 
@@ -617,7 +618,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b4f6b417-cb4a-4afd-927c-3ba315dc3f57" />
 
-#### L3 Labs Sky130 SPICE simulation for CMOS
+### L3 Labs Sky130 SPICE simulation for CMOS
 
 -  Spice Waveform : Wn = 0.36µ, Wp = 0.84µ, Ln,p = 0.15µ device (Wn/Ln = 2.4, Wp/Lp= 5.6)
 - By using Vim command check the file which already existing in the folder.
@@ -633,7 +634,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
   
 <img width="502" height="409" alt="image" src="https://github.com/user-attachments/assets/b0e80393-b728-4f96-a268-5da6a27e95a1" />
 
-#### Now doing transient analysis
+### Now doing transient analysis
 
 - By using Vim command check the file which already existing in the folder.
 - By using ":q" to quit without changing the file.
@@ -647,7 +648,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - For rise delay and Fall delay we have to consider 50% of Vdd
 - Here, 1.8/2 is 0.9 (vdd)
 
-##### For Rise Delay
+#### For Rise Delay
 
 - Zoom out the area out curve (red)- in curve(blue)
 
@@ -659,7 +660,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Rise Delay {Xout - Xin} = (2.482- 2.151)e-9 = 0.331e-9 secs =0.331 ns.
 
-##### For Fall Delay
+#### For Fall Delay
 
 - Zoom out the area out curve (red)- in curve(blue)
 
@@ -671,8 +672,8 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Fall Delay {Xout - Xin} = (4.333 - 4.05)e-9 = 0.2818e-9 =0.2818
 
-### Static behavior evaluation – CMOS inverter robustness – Switching Threshold
-#### L1: Switching Threshold, Vm
+## Static behavior evaluation – CMOS inverter robustness – Switching Threshold
+### L1: Switching Threshold, Vm
 
 - Spice Waveform : Wn = Wp = 0.375µ, Ln,p = 0.25µ device (Wn/Ln = Wp/Lp= 1.5)
 -  Spice Waveform : Wn = 0.375µ, Wp = 0.9375µ, Ln,p = 0.25µ device (Wn/Ln = 1.5, Wp/Lp= 3.75)
@@ -690,7 +691,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="502" height="402" alt="image" src="https://github.com/user-attachments/assets/c6a9a803-b9fe-4f6a-9160-79b837389914" />
 
-#### L2: Analytical expression of Vm as a function of (W/L)p and (W/L)n
+### L2: Analytical expression of Vm as a function of (W/L)p and (W/L)n
 
 - IdsP + IdsN = 0
 
@@ -704,7 +705,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="569" height="400" alt="image" src="https://github.com/user-attachments/assets/93c7496a-5719-44bd-a9ad-d91aa9e4dca3" />
 
-#### L3: Analytical expression of (W/L)p and (W/L)n as a function of Vm
+### L3: Analytical expression of (W/L)p and (W/L)n as a function of Vm
 
 - We derving the conditions, Exactly half of the power supply voltage. To achive that what should be the value of W/L ratio of PMOS and NMOS.
 - Alternatively , the required ratio of PMOS v/s NMOS transistor size can be derived, such that Vm is Set
@@ -723,7 +724,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Here , We getting the value of (W/L) PMOS  = x * (W/L) NMOS
 
-#### L4: Static and dynamic simulation of CMOS inverter
+### L4: Static and dynamic simulation of CMOS inverter
 
 - By using this relation we able to do some SPICE simulations
 
@@ -731,7 +732,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="507" height="400" alt="image" src="https://github.com/user-attachments/assets/117269b5-4d10-48d3-ab1a-2584e326bd7c" />
 
-#### L5 Static and dynamic simulation of CMOS inverter with increased PMOS width
+### L5 Static and dynamic simulation of CMOS inverter with increased PMOS width
 
 - Here the  static and dynamic simulation with Increased PMOS
 
@@ -754,7 +755,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="530" height="309" alt="image" src="https://github.com/user-attachments/assets/fd4097f5-f986-478e-8693-9d62684292f9" />
 
-#### L6: Applications of CMOS inverter in clock network and STA
+### L6: Applications of CMOS inverter in clock network and STA
 
 - There is 50mv change by varing the PMOS and (multiple of  two to three )NMOS parameter
 
@@ -767,7 +768,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="309" height="412" alt="image" src="https://github.com/user-attachments/assets/69fecf44-bf30-4571-ae36-478a3c3cfcb9" />
 
-##### Irregular Inverter / Buffer
+#### Irregular Inverter / Buffer
 
 <img width="416" height="305" alt="image" src="https://github.com/user-attachments/assets/1cd15c56-2519-4bc3-84ed-eb337f4276ec" />
 
@@ -783,7 +784,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 # NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
 ## Static behavior evaluation – CMOS inverter robustness – Noise margin
 
-#### L1: Introduction to noise margin
+### L1: Introduction to noise margin
 
 - Consider basic Inverter when i/p is 0 then o/p is 1 and vise verse
 
@@ -799,7 +800,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="412" alt="image" src="https://github.com/user-attachments/assets/5b026032-2883-48fa-8f48-1f19136941d8" />
 
-#### L2: Noise margin voltage parameters
+### L2: Noise margin voltage parameters
 
 - Slope is the change in the output voltage /  change in the input voltage
 - Here slope is negative
@@ -808,7 +809,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Acutal one on the left side and ideal one on the right side
 
-#### L3: Noise margin equation and summary
+### L3: Noise margin equation and summary
 - Here Voh > Vih(always)
 - Next stage detect as logic 1
 - Here Vol < Vil
@@ -827,7 +828,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - Second case, Bump height lies between Vil and Vih . o/p logic "undefine".(unsafe glitch)
 - Third case, Bump height lies between Vih and Voh . Will be considered as Logic'1' (safe glitch)
 
-#### L4: Noise margin variation with respect to PMOS width
+### L4: Noise margin variation with respect to PMOS width
 
 - By keeping value (x) = 1 and getting the logic 0 and logic 1 by doing porjection of curve on Y-axis
 - Here Vm = 0.99 V
@@ -863,7 +864,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="410" alt="image" src="https://github.com/user-attachments/assets/a2f16574-fc5a-4b4d-a32a-e7bcb9e6502b" />
 
-#### L5: Sky130 Noise margin labs
+### L5: Sky130 Noise margin labs
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/dcb1ccef-18bc-48a4-b9b8-fb72bd6d0f35" />
 
@@ -885,7 +886,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 # NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
 ## Static behavior evaluation – CMOS inverter robustness – Power supply variation
 
-#### L1: Smart SPICE simulation for power supply variations
+### L1: Smart SPICE simulation for power supply variations
 
 - We are analysing static behavior EValuation :CMS inverter Robudstness
 - By keeping (W/L) ratio of PMOS to NMOS cosntant and sweeping the Vdd from 2.5 V to 1 V
@@ -898,7 +899,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - CMOS inverter applied under various supply voltages
 
-#### L2: Advantages and disadvantages using low supply voltage
+### L2: Advantages and disadvantages using low supply voltage
 
 - Gain factor is the ratio of output voltage change to the input voltage
 
@@ -918,7 +919,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="422" height="307" alt="image" src="https://github.com/user-attachments/assets/bff3c728-8318-4357-a02c-75e84fef42d5" />
 
-#### L3: Sky130 Supply Variation Labs
+### L3: Sky130 Supply Variation Labs
 
 <img width="501" height="406" alt="image" src="https://github.com/user-attachments/assets/5341eeca-421b-46ee-8595-1c289e5e871a" />
 
@@ -935,7 +936,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 -  Here the Curves of VTC plotted and ranging from 1.8 V to 0.8 V
 -  Gain factor is the ratio of output voltage change to the input voltage change.
 
-##### Gain for Curves
+#### Gain for Curves
 
 -  For VTC 1.8V  curve
   
@@ -968,10 +969,10 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
   
 - Here gain keep decreasing while operating 1V VTC curve to beyond 0.8V VTC curve (i.e is because to supply Voltage is not enough to drive the PFET and NFET transistors
 
-### Static behavior evaluation – CMOS inverter robustness – Device variation
-#### L1: Sources of variation – Etching process
+## Static behavior evaluation – CMOS inverter robustness – Device variation
+### L1: Sources of variation – Etching process
 
-##### Single Inverter
+#### Single Inverter
 -  Layout view
 - Mental lines
 - Blue - metal layer ,
@@ -984,7 +985,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="406" alt="image" src="https://github.com/user-attachments/assets/ab2ad38c-342b-4225-b594-333d1d87d188" />
 
-##### Inverter Chain
+#### Inverter Chain
 
 - Ideal Mask (Area = W * L) and Actual Mask (Area = W′ × L′)
 
@@ -998,13 +999,13 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="507" height="401" alt="image" src="https://github.com/user-attachments/assets/ad3195a8-324c-4e7b-975f-06413023b907" />
 
-#### L2: Sources of variation – oxide thickness
+### L2: Sources of variation – oxide thickness
 
 - Now we are looking cross sectional view of the transistor
 
 <img width="502" height="403" alt="image" src="https://github.com/user-attachments/assets/37de8281-377c-4749-84e4-806ee38f2d06" />
 
-##### Ideal vs Actual Oxidation Process
+#### Ideal vs Actual Oxidation Process
 
 - Due to FAB involved with many chemical process. the Oxidation thickness changes from ideal case
 - Throughout the channel there will oxide thickness change
@@ -1018,9 +1019,9 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="401" height="300" alt="image" src="https://github.com/user-attachments/assets/3150a531-3403-4f7b-ae8e-4ba8b89af810" />
 
-#### L3: Smart SPICE simulation for device variations
+### L3: Smart SPICE simulation for device variations
 
-##### Strong PMOS (Wp = 1.875µ) and Weak NMOS (Wn = 0.375µ)
+#### Strong PMOS (Wp = 1.875µ) and Weak NMOS (Wn = 0.375µ)
 
 - Increase the Size of the PMOS then the resistance going to reduce as the result of that it is called Strong PMOS and contravary for the NMOS 
 
@@ -1034,7 +1035,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/b13603f9-f6c6-44c1-a5b7-aba27950a618" />
 
-#### L4: Conclusion
+### L4: Conclusion
 - By drawing a line and making an angle 45 degress with X axis
  
 - We are getting Vm shift (0.7 V to 1.4 V)
@@ -1048,7 +1049,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - Operation Of Gate is Intact
 - In Dynamic waveform varies with respective time.
 
-#### L5: Sky130 Device Variation Labs
+### L5: Sky130 Device Variation Labs
 
 <img width="501" height="404" alt="image" src="https://github.com/user-attachments/assets/cb636dd7-8052-488f-9df2-2b90ebf34ea9" />
 
