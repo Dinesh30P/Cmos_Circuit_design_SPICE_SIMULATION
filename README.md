@@ -41,11 +41,11 @@ A structured five‑day workshop exploring CMOS fundamentals, inverter behavior,
 
 # NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
 
-## Part-1:Introduction to Circuit Design and SPICE simulations 
+## Part-1: Introduction to Circuit Design and SPICE Simulations 
 
-## CMOS_Circuit_design_&_SPICE_SIMULATION
+## CMOS_Circuit_Design_&_SPICE_SIMULATION
  
-### L1: Why is SPICE Simulation needed?
+### L1: Why is SPICE Simulation Needed?
 - To verify circuit behavior before fabrication.
 -  To optimize the Performance.
 -  To reduce the Cost and improve timing efficiency.
