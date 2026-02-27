@@ -35,13 +35,13 @@ A structured five‑day workshop exploring CMOS fundamentals, inverter behavior,
     - [Part 2: Static Behavior Evaluation - CMOS Inverter Robustness: Device Variation](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#static-behavior-evaluation--cmos-inverter-robustness--device-variation)
         
         - [Lab Activity](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#l5-sky130-device-variation-labs)
-- [Conclusion and Opinion](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#l4-conclusion)
-- [References](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#references)
+- [Conclusion and Opinion](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#conclusion-and-opinion)
+- [References](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#references)
 
 
 # NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
 
-## Introduction to Circuit Design and SPICE simulations 
+## Part-1:Introduction to Circuit Design and SPICE simulations 
 
 ## CMOS_Circuit_design_&_SPICE_SIMULATION
  
@@ -141,7 +141,7 @@ A transistor is a semiconductor device that can control the current flow through
 
 - These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.
 
-## NMOS resistive region and saturation region of operation
+## Part-2: NMOS resistive region and saturation region of operation
 
 ### L1: Resistive region of operation with small drain-source voltage
 
@@ -262,7 +262,7 @@ Vds^2 / 2 term in the current equation.
 
 - Id = (Kn'/2)(W/L)(1+ λ*Vds)(Vgs-Vt)**2
 
-## Introduction to SPICE
+## Part-3:Introduction to SPICE
 
 ### L1 Basic SPICE setup
 
@@ -361,7 +361,7 @@ Vds^2 / 2 term in the current equation.
 
 # NgspiceSky130 - Day 2 - Velocity saturation and basics of CMOS inverter VTC
 
-## SPICE simulation for lower nodes and velocity saturation effect
+## Part-1: SPICE simulation for lower nodes and velocity saturation effect
 
 ### L1: SPICE simulation for lower nodes
 
@@ -506,7 +506,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - The point of intersection of X-axis around 0.77 volts(vds).
 
-## CMOS voltage transfer characteristics (VTC)
+## Part-2: CMOS voltage transfer characteristics (VTC)
 
 ### L1: MOSFET as a switch
 
@@ -631,7 +631,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 <img width="503" height="401" alt="image" src="https://github.com/user-attachments/assets/d751ba5b-ddc5-4a0a-b023-3b182ad674f2" />
 
 # NgspiceSky130 - Day 3 - CMOS Switching threshold and dynamic simulations
-## Voltage transfer characteristics – SPICE simulations
+## Part-1: Voltage transfer characteristics – SPICE simulations
 
 ### L1: SPICE deck creation for CMOS inverter
 
@@ -713,7 +713,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 - Fall Delay {Xout - Xin} = (4.333 - 4.05)e-9 = 0.2818e-9 =0.2818
 
-## Static behavior evaluation – CMOS inverter robustness – Switching Threshold
+## Part-2: Static behavior evaluation – CMOS inverter robustness – Switching Threshold
 ### L1: Switching Threshold, Vm
 
 - Spice Waveform : Wn = Wp = 0.375µ, Ln,p = 0.25µ device (Wn/Ln = Wp/Lp= 1.5)
@@ -823,7 +823,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 - One can used as Clock cell and rest of them can used as data path
 
 # NgspiceSky130 - Day 4 - CMOS Noise Margin robustness evaluation
-## Static behavior evaluation – CMOS inverter robustness – Noise margin
+## Part-1: Static behavior evaluation – CMOS inverter robustness – Noise margin
 
 ### L1: Introduction to noise margin
 
@@ -925,7 +925,7 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
  - Low Noise Margin(LNM) = Vil- Vol = 0.758 - 0.113 = 0.645
 
 # NgspiceSky130 - Day 5 - CMOS power supply and device variation robustness evaluation
-## Static behavior evaluation – CMOS inverter robustness – Power supply variation
+## Part-1: Static Behavior Evaluation – CMOS inverter robustness – Power supply variation
 
 ### L1: Smart SPICE simulation for power supply variations
 
