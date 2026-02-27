@@ -1,11 +1,9 @@
 # CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop
 
-[![CMOS-Workshop-Banner](https://user-images.githubusercontent.com/89193562/133044335-5f27320f-072d-43c9-b02b-f807298c7763.jpg)](https://www.vlsisystemdesign.com/cmos-circuit-design-spice-simulation-using-sky130-technology/)
-
-### **_Brief Description of the course_**
+## **_Brief Description of the course_**
 A structured five‑day workshop exploring CMOS fundamentals, inverter behavior, and design challenges. [VLSI System Design]( https://www.vlsisystemdesign.com/). This five‑day CMOS circuit design workshop was carefully organized to build knowledge step by step. It began with NMOS drain current (Id) and voltage transfer characteristics (VTC), then moved to velocity saturation and inverter transfer curves. The mid‑sessions focused on switching thresholds(Vt), dynamic simulations, and deriving key equations that link PMOS/NMOS sizing (W/L) ratios to the switching threshold voltage(Vm). Later, noise margins and inverter robustness were discussed, and the final day examined how variations in power supply and fabrication processes affect both single inverters and inverter chains. The workshop offered a balanced mix of theoretical derivations and practical insights into CMOS design.
 
-# **_INDEX:_**
+## **_INDEX:_**
 
 - [CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#cmos-circuit-design-and-spice-simulation-using-sky130-technology-workshop)
     - [Brief Description of the course](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#brief-description-of-the-course)
