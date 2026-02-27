@@ -5,7 +5,8 @@ A structured five‑day workshop exploring CMOS fundamentals, inverter behavior,
 
 ## **_INDEX:_**
 
-- [CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#cmos-circuit-design-and-spice-simulation-using-sky130-technology-workshop)
+- [CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop [(https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION?tab=readme-ov-file#cmos_circuit_design__spice_simulation)]
+  
     - [Brief Description of the course](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#brief-description-of-the-course)
 - [INDEX](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#index)
 - [Day 1: Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#day-1-basics-of-nmos-drain-current-id-vs-drain-to-source-voltage-vds)
