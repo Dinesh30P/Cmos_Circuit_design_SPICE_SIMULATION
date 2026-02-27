@@ -1106,8 +1106,18 @@ Barely look like qudaratic for lower values of gate voltage and linear for highe
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/5e84f50a-bd3d-4448-a457-1716efc6ebde" />
 
+## Conclusion and Opinion
+
+During the course, I explored MOSFETs and CMOS inverters in detail, learning how inverter characteristics can be modified and how to create a SPICE deck from a netlist for simulation. I studied CMOS voltage transfer characteristics, the factors influencing them, and methods for static behavior evaluation. The lab activities were especially insightful—the plots generated encouraged me to experiment with parameter changes in the SPICE code. Overall, the workshop sparked my interest in mastering MOSFET fundamentals and provided a rewarding experience with VLSI System Design, supported by constant guidance throughout.
 
 
+# References
+
+- [https://github.com/kunalg123/sky130CircuitDesignWorkshop](https://github.com/kunalg123/sky130CircuitDesignWorkshop)
+- [https://www.vsdiat.com/](https://www.vsdiat.com/)
+- [https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+- [https://github.com/kunalg123/vsdflow](https://github.com/kunalg123/vsdflow)
 
 
 
