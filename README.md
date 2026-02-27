@@ -3,8 +3,46 @@
 [![CMOS-Workshop-Banner](https://user-images.githubusercontent.com/89193562/133044335-5f27320f-072d-43c9-b02b-f807298c7763.jpg)](https://www.vlsisystemdesign.com/cmos-circuit-design-spice-simulation-using-sky130-technology/)
 
 ### **_Brief Description of the course_**
-This is a five-day workshop focused towards CMOS circuit design and SPICE simulation using SKY130 technology organized by [VLSI System Design]( https://www.vlsisystemdesign.com/). The content of the workshop is divided across the five days in a smart way which allows the learner to grasp all the concepts if the workshop is attended dedicatedly. On the first day of the workshop the emphasis was on the basics of NMOS Drain current (Id), Drain-to-source Voltage (Vds) and the plot between the two of them. The second day focusses primarily on velocity saturation and basics of CMOS inverter VTC and the plots between Id and Vgs and the plot for determining the value of Vt. The third was concentrated on CMOS switching threshold and dynamic simulations, where a lot of equations were derived to find the relationships between the (W/L) ratios of the PMOS and NMOS and the switching threshold voltage (Vm). On the fourth day of the workshop, Noise margins and CMOS inverter robustness with respect to them was discussed. On the fifth and final day of the workshop the emphasis was on Power supply variation and Device variation. In the power supply variation, the effects of using various power supplies on the inverter were observed and we discussed the advantages and disadvantages of using small power supply and the reason that it is not used. In the device variation, the impact of manufacturing processes on a single inverter and inverter chain were discussed.
+A structured five‑day workshop exploring CMOS fundamentals, inverter behavior, and design challenges. [VLSI System Design]( https://www.vlsisystemdesign.com/). This five‑day CMOS circuit design workshop was carefully organized to build knowledge step by step. It began with NMOS drain current (Id) and voltage transfer characteristics (VTC), then moved to velocity saturation and inverter transfer curves. The mid‑sessions focused on switching thresholds(Vt), dynamic simulations, and deriving key equations that link PMOS/NMOS sizing (W/L) ratios to the switching threshold voltage(Vm). Later, noise margins and inverter robustness were discussed, and the final day examined how variations in power supply and fabrication processes affect both single inverters and inverter chains. The workshop offered a balanced mix of theoretical derivations and practical insights into CMOS design.
 
+# **_INDEX:_**
+
+- [CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#cmos-circuit-design-and-spice-simulation-using-sky130-technology-workshop)
+    - [Brief Description of the course](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#brief-description-of-the-course)
+- [INDEX](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#index)
+- [Day 1: Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#day-1-basics-of-nmos-drain-current-id-vs-drain-to-source-voltage-vds)
+  - [Part 1: Introduction to Circuit Design and SPICE simulations](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-1-introduction-to-circuit-design-and-spice-simulations)
+      - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt)
+  - [Part 2: NMOS Resistive region and Saturation region of operation](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-2-nmos-resistive-region-and-saturation-region-of-operation)
+      - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-1)
+  - [Part 3: Introduction to SPICE](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-3-introduction-to-spice)
+      - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-2)
+      - [Lab Activity](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#lab-activity)
+- [Day 2: Velocity Saturation and basics of CMOS inverter VTC](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#day-2-velocity-saturation-and-basics-of-cmos-inverter-vtc)
+    - [Part 1: SPICE simulation for lower nodes and velocity saturation effect](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-1-spice-simulation-for-lower-nodes-and-velocity-saturation-effect)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-3)
+        - [Lab Activity](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#lab-activity-1)
+    - [Part 2: CMOS voltage transfer characteristics (VTC)](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-2-cmos-voltage-transfer-characteristics-vtc)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-4)
+- [Day 3: CMOS switching threshold and dynamic simulations](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#day-3-cmos-switching-threshold-and-dynamic-simulations)
+    - [Part 1: Voltage transfer characteristics and SPICE simulations](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-1-voltage-transfer-characteristics-and-spice-simulations)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-5)
+        - [Lab Activity](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#lab-activity-2)
+    - [Part 2: Static Behavior Evaluation - CMOS Inverter Robustness: Switching threshold](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-2-static-behavior-evaluation---cmos-inverter-robustness-switching-threshold)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-6)
+- [Day 4: CMOS Noise Margin Robustness Evaluation](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#day-4-cmos-noise-margin-robustness-evaluation)
+    - [Part 1: Static Behavior Evaluation - CMOS Inverter Robustness: Noise Margin](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-1-static-behavior-evaluation---cmos-inverter-robustness-noise-margin)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-7)
+        - [Lab Activity](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#lab-activity-3)
+- [Day 5: CMOS Power supply and device variation robustness evaluation](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#day-5-cmos-power-supply-and-device-variation-robustness-evaluation)
+    - [Part 1: Static Behavior Evaluation - CMOS Inverter Robustness: Power Supply Variation](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-1-static-behavior-evaluation---cmos-inverter-robustness-power-supply-variation)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-8)
+        - [Lab Activity](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#lab-activity-4)
+    - [Part 2: Static Behavior Evaluation - CMOS Inverter Robustness: Device Variation](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#part-2-static-behavior-evaluation---cmos-inverter-robustness-device-variation)
+        - [What was learnt](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#what-was-learnt-9)
+        - [Lab Activity](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#lab-activity-5)
+- [Conclusion and Opinion](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#conclusion-and-opinion)
+- [References](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#references)
 
 
 # NNgspiceSky130 - Day 1 - Basics of NMOS Drain current (Id) vs Drain-to-source Voltage (Vds)
