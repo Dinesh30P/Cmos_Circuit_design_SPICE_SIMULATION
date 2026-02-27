@@ -5,7 +5,7 @@ A structured five‑day workshop exploring CMOS fundamentals, inverter behavior,
 
 ## **_INDEX:_**
 
-- [CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop [(https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION?tab=readme-ov-file#cmos_circuit_design__spice_simulation)]
+- [CMOS Circuit Design and SPICE Simulation using SKY130 Technology Workshop]  [(https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION?tab=readme-ov-file#cmos_circuit_design__spice_simulation)]
   
     - [Brief Description of the course](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#brief-description-of-the-course)
 - [INDEX](https://github.com/VrushabhDamle/sky130CircuitDesignWorkshop/blob/main/README.md#index)
