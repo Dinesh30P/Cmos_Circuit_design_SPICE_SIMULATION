@@ -12,7 +12,7 @@ A structured five‑day workshop exploring CMOS fundamentals, inverter behavior,
 - [INDEX](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#index)
 
 - [Day 1: Basics of NMOS Drain Current (Id) vs Drain-to-source Voltage (Vds)](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#nngspicesky130---day-1---basics-of-nmos-drain-current-id-vs-drain-to-source-voltage-vds)
-  - [Part 1: Introduction to Circuit Design and SPICE simulations](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#introduction-to-circuit-design-and-spice-simulations)
+  - [Part 1: Introduction to Circuit Design and SPICE simulations](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#part-1-introduction-to-circuit-design-and-spice-simulations)
   - [Part 2: NMOS Resistive region and Saturation region of operation](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#nmos-resistive-region-and-saturation-region-of-operation)
   - [Part 3: Introduction to SPICE](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#introduction-to-spice)
       - [Lab Activity](https://github.com/Dinesh30P/Cmos_Circuit_design_SPICE_SIMULATION/tree/main?tab=readme-ov-file#l4-first-spice-simulation)
